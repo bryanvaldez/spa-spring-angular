@@ -1,0 +1,119 @@
+.cont-carts {
+    max-height: 67.1vh;
+    overflow: auto;
+    margin: 0.5vh 3vh;
+    text-align: center;
+    min-height: 325px;
+}
+
+.btn_descargar {
+    background-image: url(../img/descargar-ico.png);
+    background-size: 66%;
+    background-color: #28557f;
+    background-repeat: no-repeat;
+    background-position: 8px 6px;
+}
+.cont-tarj p{
+    display: inline-block;
+    width: 70%;
+    vertical-align: middle;
+    text-align: left;   
+}
+
+.cont-tarj .estilosBotonGeneral {
+    display: inline-block;
+}
+
+.tarjeta_dash{
+    width: 22%;
+    display: inline-block;
+    vertical-align: top;
+    box-shadow: 0px 0px 17px -4px #444;
+    margin: 1.5% 1%;
+    padding: 15px;
+    border-bottom: 25px solid #2da1a0;
+    height: 27vh;
+    min-height: 176px;
+    animation-name: Tarjeta;
+    -moz-animation-name: Tarjeta;
+    -webkit-animation-name: Tarjeta;
+    -ms-animation-name: Tarjeta;
+    -o-animation-name: Tarjeta;
+    background: #fff;
+}
+
+.tarjeta_dash .tituloTerciario b {
+    max-width: 79%;
+    display: inline-flex;
+    vertical-align: middle;
+    height: 26px;
+    align-items: center;
+}
+
+.tarjeta_dash:nth-child(odd){
+
+    animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    -webkit-animation-duration:0.5s;
+    -ms-animation-duration: 0.5s;
+    -o-animation-duration: 0.5s;
+}
+
+.tarjeta_dash:nth-child(even) {
+    animation-duration: 0.7s;
+    -moz-animation-duration: 0.7s;
+    -webkit-animation-duration:0.7s;
+    -ms-animation-duration: 0.7s;
+    -o-animation-duration: 0.7s;
+}
+
+.tituloTerciario i {
+    font-size: 30px;
+    color: #2da1a0;
+    margin: -6px 2px 0px 2px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@keyframes Tarjeta {
+    0%   {
+        -ms-transform: scale(0.1); /* IE 9 */
+        -webkit-transform: scale(0.1); /* Safari */
+        transform: scale(0.1);
+        opacity: 0;
+    }
+    100% {
+        -ms-transform: scale(1); /* IE 9 */
+        -webkit-transform: scale(1); /* Safari */
+        transform: scale(1);
+    }
+}
+
+@media(min-width: 1600px){ 
+
+    .cont-carts {
+        max-height:74.1vh;
+
+    }
+}
+
+@media screen and  (max-width: 1300px)  {
+    .tarjeta_dash {
+        width: 40%;
+        margin: 2.5%;
+    }
+}
+
+@media screen and  (max-width: 990px)  , screen and  (max-height:569px){
+
+}
+
+@media(max-width: 670px){
+
+    .tarjeta_dash {
+        width: 90%;
+        margin: 5%;
+    }
+
+}
+

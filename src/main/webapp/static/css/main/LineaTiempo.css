@@ -1,0 +1,260 @@
+/*********** pasos  **************/
+
+
+.barraPasosSeguir{
+    position: absolute;
+    right: 27px;
+    top: 0;
+    border:0;
+    width: 5px;
+    height: 100%;
+    background: url(../../img/texturaLineaTiempo.jpg);
+    background-size: 7px;
+}
+
+.paso-a-cargar{
+    position: absolute;
+    right: 27px;
+    top: 0;
+    border:0;
+    width: 5px;
+    height: 100%;
+    background: url(../../img/texturaLineaTiempo.jpg);
+    background-size: 7px;
+}
+
+.barra-pasos{
+    position: absolute;
+    right: 0px;
+    top: 0;
+    background: #113654;
+    width: 5px;
+    -webkit-transition:0.8s; 
+    transition: 0.8s;
+    animation-name: PasosCarga;
+    -moz-animation-name: PasosCarga;
+    -webkit-animation-name: PasosCarga;
+    -ms-animation-name: PasosCarga;
+    -o-animation-name: PasosCarga;
+    animation-duration: 1.2s;
+    -moz-animation-duration: 1.2s;
+    -webkit-animation-duration:1.2 s;
+    -ms-animation-duration: 1.2s;
+    -o-animation-duration: 1.2s;
+    z-index: 5
+}
+
+@keyframes PasosCarga {
+    0%   {height: 0px;}
+    100% {}
+}
+
+
+.limiteDeCarga-pasos{
+    height: 358px;
+    position: relative;
+}
+
+.pasos_a_seguir {
+    width: 19%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0px -2.5px 0px -1.5px;
+    position: relative;
+    padding: 0 0 12px 0;
+}
+
+
+.pasos_a_seguir ul {
+    list-style: none;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.pasoFaltante , .pasoCompleto , .pasoActual {
+    position: relative;
+}
+
+
+.pasoFaltante:after , .pasoCompleto:after , .pasoActual:after{
+    position: absolute;
+    right: 0px;
+    z-index: 5 !important;
+}
+
+
+.pasoFaltante:after{
+    content: "";
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background: #fff;
+    border-radius: 50%;
+    right: 16px;
+    top: 50%;
+    margin-top: -15px;
+    box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.44);
+    z-index: 12;
+}
+
+.pasoActual:after{
+    content: "";
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background: #1f547e;
+    border-radius: 50%;
+    right: 13px;
+    top: 50%;
+    margin-top: -15px;
+    box-shadow: 0 0 0px 3px rgb(31, 84, 126);
+    border: 3px solid white;
+    z-index: 12;
+    animation-duration: 0.8s;
+    -moz-animation-duration: 0.8s;
+    -ms-animation-duration: 0.8s;
+    -o-animation-duration: 0.8s;
+    -ms-animation-duration: 0.8s;
+    animation-name: ActualPasoResalt;
+    -moz-animation-name: ActualPasoResalt;
+    -o-animation-name: ActualPasoResalt;
+    -ms-animation-name: ActualPasoResalt;
+    -webkit-animation-name: ActualPasoResalt;
+    animation-iteration-count: infinite;
+    -mos-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-direction: alternate;
+    -moz-animation-direction: alternate;
+    -webkit-animation-direction: alternate;
+    -ms-animation-direction: alternate;
+    -o-animation-direction: alternate;
+}
+
+@keyframes ActualPasoResalt {
+    from {
+
+    }
+
+    80%{
+
+    }
+    90%{
+        box-shadow: 0 0 0px 6px rgb(31, 84, 126);
+    }
+
+    to {
+        box-shadow: 0 0 0px 6px rgb(31, 84, 126);
+    }
+}
+
+
+.pasoCompleto:after{
+    content: "";
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background:#113654;
+    border-radius: 50%;
+    right: 16px;
+    top: 50%;
+    margin-top: -15px;
+    box-shadow: 0 0 6px -1px rgba(0, 0, 0, 0.44);
+    z-index: 12;
+}
+
+
+.cuerpoProyecto .ListadePasos li {
+    width: 100%;
+    padding: 10px 68px 10px 10px;
+    border-left: 7px solid #bfbfbf;
+    margin: 21px 0px;
+    text-align: left;
+    position: relative;
+    height: 77px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.cuerpoProyecto .ListadePasos li span {
+    color: #3f71a0;
+    display: block;
+    font-size: 10px;
+}
+
+.pasoFaltante{
+
+}
+
+.pasoActual{
+    border-left: 7px solid #1f547e !important;
+    box-shadow: 0 0 7px 0px rgba(0, 0, 0, 0.44);
+    font-weight: 700;
+}
+
+.pasoCompleto{
+    border-left: 7px solid #113654 !important;
+}
+
+
+.pasos_a_seguir{
+    overflow: hidden;   
+    display: flex;
+}
+
+
+
+
+@media screen and  (min-width: 1600px)  {
+    .cuerpoProyecto .ListadePasos li{
+        font-size: 16px;
+        padding: 10px 75px 10px 10px;
+    }
+
+    .cuerpoProyecto .ListadePasos li span {
+        color: #3f71a0;
+        display: block;
+        font-size: 14px;
+    }
+
+    .listaReglasPrestablecidas li{
+        font-size: 14px;
+    }
+}
+
+@media screen and  (max-width: 1300px)  {
+    .pasos_a_seguir{
+        width: 25% !important;      
+    }
+
+}
+@media screen and  (max-width: 990px)  , screen and  (max-height:569px){
+
+
+    .pasos_a_seguir {
+        width: 100% !important;
+        height: auto;
+        margin: 0;
+    }
+}
+
+@media(max-width: 670px){
+
+    .contenidoEstandar{
+        width: 100%;
+    }
+
+    .pasos_a_seguir {
+        width: 100% !important;
+        height: auto;
+        margin: 0;
+    }
+
+    .pasos_a_seguir {
+        border-bottom: 20px solid #ffffff;
+    }
+
+}

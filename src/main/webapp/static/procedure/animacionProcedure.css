@@ -1,0 +1,146 @@
+.cargandoGeneralAnimacion{
+    background: rgba(0, 0, 0, 0.86);width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 450;
+    top: 0;
+    left: 0;
+    animation-name: animPopUpAnima;
+    -moz-animation-name: animPopUpAnima;
+    -webkit-animation-name: animPopUpAnima;
+    -ms-animation-name: animPopUpAnima;
+    -o-animation-name: animPopUpAnima;
+    animation-duration: 0.2s;
+    -moz-animation-duration: 0.2s;
+    -webkit-animation-duration: 0.2s;
+    -ms-animation-duration: 0.2s;
+    -o-animation-duration: 0.2s;
+    overflow: hidden;   
+}
+
+
+@keyframes animPopUpAnima {
+    0%   {
+    opacity: 0;
+    }
+
+    100% {
+
+    }
+}
+
+.porsentajeAvanceAnimacion {
+    position: fixed;
+    z-index: 480;
+    color: #fff;
+    font-size: 30px;
+    top: 64%;
+    width: 340px;
+    display: inline-block;
+    text-align: center;
+    left: 60%;
+    margin-left: -179px;
+    margin-top: 23vh;
+    background-color: transparent;
+    padding: 5px;
+}
+
+.cargandoGeneralAnimacion section{
+    z-index: 480;
+    position: fixed;
+    width: 102vh;
+    height: auto;
+    top: 62%;
+    left: 62%;
+    margin-left: -56vh;
+    margin-top: -42vh;
+}
+
+
+
+.cargandoGeneralAnimacion section canvas{ 
+width: 100% !important;
+height: 100% !important;
+}
+
+@media screen and  (min-width: 1600px)  {
+
+/*
+    .cargandoGeneralAnimacion canvas{
+        -ms-transform: scale(1.5); 
+        -webkit-transform: scale(1.5); 
+        transform: scale(1.5);
+
+    }
+*/
+    .porsentajeAvanceAnimacion{
+    margin-left: -230px;
+    width: 420px;
+    font-size: 32px;
+    background: transparent;
+    padding: 5px;
+/*    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.62);*/
+    }
+
+
+}
+
+
+
+@media screen and  (max-width: 990px)  {
+    .cargandoGeneralAnimacion{
+        position: fixed;
+    } 
+
+.cargandoGeneralAnimacion section canvas {
+    width: 90% !important;
+    height: 100% !important;
+    display: block;
+    margin: auto auto;
+ 
+}
+
+    .cargandoGeneralAnimacion section{
+    margin-top: -34%;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    position: fixed;
+    top: 66%;   
+    }
+
+    .porsentajeAvanceAnimacion{
+        top: auto;
+        bottom: 0;
+        width: 100%;
+        background: #4ca598;
+        padding: 3px;
+        left: 0;
+        display: block;
+        margin: 0;
+
+    }
+
+
+
+}
+
+@media screen and  (max-height:569px){
+    .cargandoGeneralAnimacion section{
+  width: 350px;
+    height: auto;
+    position: relative;
+    margin: 0;
+    left: 50%;
+    margin-left: -175px;
+    top: 168px;
+    }
+
+    .cargandoGeneralAnimacion {
+            display: flex;
+    align-items: center;
+    justify-content: center;
+}
+}

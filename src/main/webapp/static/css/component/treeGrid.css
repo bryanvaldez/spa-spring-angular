@@ -1,0 +1,300 @@
+/* 
+ * treeGrid.css
+ *
+ * Styles for the tree-grid
+ * for both Bootstrap 2 and Bootstrap 3
+ *
+ */
+.tree-grid-animate-enter,
+.tree-grid-row.ng-enter {
+    -moz-transition: 200ms linear all;
+    -o-transition: 200ms linear all;
+    -webkit-transition: 200ms linear all;
+    transition: 200ms linear all;
+    position: relative;
+    display: block;
+    opacity: 0;
+    max-height: 0;
+}
+
+.tree-grid-animate-enter.tree-grid-animate-enter-active,
+.tree-grid-row.ng-enter-active {
+	opacity    : 1;
+	max-height : 30px;
+}
+
+.tree-grid-animate-leave,
+.tree-grid-row.ng-leave {
+    -moz-transition: 200ms linear all;
+	-o-transition: 200ms linear all;
+	-webkit-transition: 200ms linear all;
+    transition: 200ms linear all;
+    position: relative;
+    display: block;
+    height: 30px;
+    max-height: 30px;
+    opacity: 1;
+}
+
+.tree-grid-animate-leave.tree-grid-animate-leave-active,
+.tree-grid-row.ng-leave-active {
+	height     : 0;
+	max-height : 0;
+	opacity    : 0;
+}
+
+/*
+ * Angular 1.2.0 Animation placeholders.
+ */
+.tree-grid-animate.ng-enter {
+}
+
+/*
+ * Normal CSS styles.
+ */
+.tree-grid i.indented {
+	padding : 2px;
+}
+
+.tree-grid .level-1 .indented {
+	position : relative;
+	left     : 0;
+}
+
+.tree-grid .level-2 .indented {
+	position : relative;
+	left     : 20px;
+}
+
+.tree-grid .level-3 .indented {
+	position : relative;
+	left     : 40px;
+}
+
+.tree-grid .level-4 .indented {
+	position : relative;
+	left     : 60px;
+}
+
+.tree-grid .level-5 .indented {
+	position : relative;
+	left     : 80px;
+}
+
+.tree-grid .level-6 .indented {
+	position : relative;
+	left     : 100px;
+}
+
+.tree-grid .level-7 .indented {
+	position : relative;
+	left     : 120px;
+}
+
+.tree-grid .level-8 .indented {
+	position : relative;
+	left     : 140px;
+}
+
+.tree-grid .level-9 .indented {
+	position : relative;
+	left     : 160px;
+}
+
+.tree-grid .tree-icon,
+.tree-label {
+	cursor : pointer;
+}
+
+table.tree-grid {
+	max-height : 500px;
+	overflow-y : scroll;
+}
+
+/*custom*/
+
+.componente-treetable{
+    width: 100%;
+}
+//Lado Izquierdo (Treetable)
+.treetable{
+    max-width: 120vh;
+    border: 2px solid;
+    border-color:black;
+}
+.titulo-treetable{
+/*    min-width: 120vh;*/
+}
+.tree-button{
+    background-attachment: fixed;    
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    border: none;
+    background-color : #FFA726;
+    //  background-image: url("../img/button-flecha.JPG");
+
+}
+
+
+.table md-checkbox{
+    margin-bottom: 0px !important;
+}
+
+
+//Lado Derecho (Card)
+.card{
+    max-width: 40vh;
+    border: 2px solid !important;
+    border-color:black;
+
+}
+.titulo-card-treetable{
+    min-width: 40vh;
+}
+.contenido-card-distrito{
+    max-height: 100%;
+    min-width: 40vh;
+    text-align: center;
+}
+.card-nuevo-distrito{
+    max-height: 100%;    
+    background-color: white;
+    border: 2px solid;
+    border-color:black;
+}
+.capsule-head{
+
+    margin: 6px 0px 0px 0px;  
+    background-color: #E6E6E6;
+}
+.icon-star{
+    width: 25px;
+    height: 25px;
+}
+.titulo-distrito{
+    font-size: 16px;
+    font-weight: bold;
+}
+.btn_cerrar{
+    height: 10px;
+    min-width: 10px !important;
+    background-color: black;
+}
+.capsule-contenido{
+    padding: 0px 10px 0px 10px;
+    border-top: 5px solid;
+    border-color: black;
+}
+.consejo{    
+    display: inline-block;
+    height: 150px;
+    width: 35vh;
+    color: white;
+    background-color: #929292;
+}
+//Solucion
+.titulo-treetable-solucion{
+
+}
+.treetable-solucion{
+/*    min-width: 150vh;*/
+    width: 100%;
+    border: 2px solid;
+    border-color:black;
+}
+.card-asignar{
+    // max-width: 35vh;
+    max-width: 20%;
+    border-top: 4px solid !important;
+    border-bottom: 4px solid !important;
+    border-right: 4px solid !important;
+    border-left: 0px solid !important;
+    border-color:black;
+    
+
+}
+/*
+.card-solucion{
+    display: inline-block;
+    min-width: 45% !important;
+    margin: 15px !important;
+}
+
+
+.card-solucion-select{
+    display: inline-block;
+    min-width: 90% !important;
+    margin: 22px !important;
+    box-shadow: 0 0 8px #FFA726;
+    border:3px solid;
+    border-color: #FFA726;
+}
+
+.card-asignacion-solucion{
+    max-height:100%;
+    //  background-color: white;
+
+}
+
+.barra-titulo-card{
+    height: 15px;  
+    background-color: grey;
+    width: 100%;    
+}
+*/
+.fa-file:before {
+    content: "\f067";
+}
+.boton-guardar-solucion{
+    background-color: black;
+    color: white;
+    max-width: 350px;
+
+}
+.titulo-card{
+    font-size: 35px;
+    font-weight: bold;
+}
+.tabla-card{
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+
+}
+.text-total{
+    font-weight: bold;
+}
+/*
+.capsule-card{
+    padding: 20px 20px 20px 20px;
+}
+*/
+.capsule-solucion{
+    min-height: 85vh;
+    max-height: 85vh;
+}
+.tabla-titulo{
+    min-width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    border-collapse: inherit;
+    margin-bottom: 14px;
+    box-shadow: 0 0 5px -1px #9298a1;
+    margin-top: 9px;
+    border-spacing: 0;
+}
+
+.radio-group-treetable{
+    margin-left: 25px;
+}
+.porcentaje-completados{
+    display:inline-block;
+    float:right;
+    margin-left: 25px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.divider-card{
+    border-top-width: 4px;
+    border-color: black;
+}

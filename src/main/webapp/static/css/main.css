@@ -1,0 +1,243 @@
+
+.hint {
+    padding-left: 36px;
+    padding-right: 0;  
+    position: absolute;
+    left: 2px;
+    right: auto;
+    bottom: 7px;
+    font-size: 12px;
+    line-height: 14px;
+    transition: all 0.3s cubic-bezier(0.55, 0, 0.55, 0.2);
+    color: grey; 
+}
+
+/*General*/
+::-webkit-scrollbar  {
+    width: 7px;
+    background: #e6e5ef;
+    height: 7px;
+}
+::-webkit-scrollbar-thumb {
+    background: #8d959a;
+    cursor: pointer;
+    border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #5b7784;
+    cursor: pointer;
+}
+
+
+
+
+
+/*Pasos Nuevos*/
+.listaDePasosMenuOpcional {
+    background: #ffffff;
+    box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.29);
+    -moz-box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.29);
+    -ms-box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.29);
+    -webkit-box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.29);
+    -o-box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.29);
+    z-index: 8;
+    position: relative;
+}
+.ListadePasos{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.ListadePasos li{
+    padding: 10px 80px 10px 10px;
+    border-left: 7px solid #bfbfbf;
+    margin: 12px 0;
+    text-align: left;
+    position: relative;
+}
+.ListadePasos li span{
+    line-height: 1;
+    margin: 10px 0;
+}
+.ListadePasos li h3{
+    line-height: 1;
+    margin: 10px 0;
+}
+.ListadePasos li:after{
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    background: #fff;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    right: 35px;
+    z-index: 100;
+    top: 35%;
+    box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.44);
+}
+.ListadePasos .EstadoConcluido:after{
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    background: #113654;
+    position: absolute;
+    right: 35px;
+    z-index: 100;
+    top: 35%;
+    box-shadow: 0 0 6px -1px rgba(0, 0, 0, 0.44);
+}
+.ListadePasos .EstadoActivo:after{
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    background: #1f547e;
+    position: absolute;
+    right: 33px;
+    z-index: 100;
+    top: 35%;
+    box-shadow: 0 0 0px 3px rgb(31, 84, 126);
+    border: 3px solid white;
+}
+.ListadePasos .EstadoConcluido:after{
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    background: #113654;
+    position: absolute;
+    right: 35px;
+    z-index: 100;
+    top: 35%;
+    box-shadow: 0 0 6px -1px rgba(0, 0, 0, 0.44);
+}
+.ListadePasos .EstadoActivo:after{
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    background: #1f547e;
+    position: absolute;
+    right: 33px;
+    z-index: 100;
+    top: 35%;
+    box-shadow: 0 0 0px 3px rgb(31, 84, 126);
+    border: 3px solid white;
+}
+.EstadoConcluido{
+    border-left: 7px solid #113654 !important;
+}
+.EstadoActivo {
+    border-left: 7px solid #1f547e !important;
+    box-shadow: 0 0 7px 0px rgba(0, 0, 0, 0.44);
+}
+.barraRealTime{
+    /*    height: 424px;*/
+    height: 100%;
+    width:100%;
+}
+.barraLineaTiempo {
+    width: 7px;
+    height: 100%;
+    background: url(../img/texturaLineaTiempo.jpg);
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 44px;
+    z-index: 1;
+    background-size: 7px;
+}
+.cargadorBarraTiempo {
+    width: 100%;
+    background: #1f547e;
+    display: inline-block;
+    z-index: 1;
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+    animation-name: PasosCarga;
+    -moz-animation-name: PasosCarga;
+    -webkit-animation-name: PasosCarga;
+    -ms-animation-name: PasosCarga;
+    -o-animation-name: PasosCarga;
+    animation-duration: 1.2s;
+    -moz-animation-duration: 1.2s;
+    -webkit-animation-duration: 1.2s;
+    -ms-animation-duration: 1.2s;
+    -o-animation-duration: 1.2s;
+    z-index: 8;
+}
+@keyframes PasosCarga {
+    0%   {
+        height: 0%;
+    }
+    100% {}
+}
+
+
+/* Estilos Generales*/
+.CuerpoTotalProyecto {
+    background-image: url(../img/fondo.png) !important;
+    background-color: #e6e6e6;
+    overflow: auto;
+}
+.cuerpoProyecto {
+    width: 100%;
+    height: 89.9vh;
+    display: flex;
+    flex-direction: row;
+}
+.pasos_a_seguir{
+ 
+}
+.contenidoEstandar{
+    width: 100%;
+    display: inline-block;
+    height: auto;
+}
+@media(min-width: 1600px){ 
+    .cuerpoProyecto {
+        width: 100%;
+        height: 92.9vh;
+    }
+    .columnaDiviTres {
+        max-height: 84.5vh;
+    }
+}
+
+
+
+@media screen and  (max-width: 1200px)  {
+    .contenidoEstandar{
+        width: 75%;
+        height: auto;
+        display: inline;
+        overflow: auto;
+    }
+    .pasos_a_seguir{
+
+    }
+    .cabeceraGeneral{
+        height: auto;
+    }
+    .columnaDiviTres{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .cuerpoProyecto{
+        height: auto;
+    }
+}
+@media screen and  (max-width: 980px)  , screen and  (max-height:569px){
+    .cuerpoProyecto{
+        display: block;
+    }
+    .contenidoEstandar{
+        width: 100%;
+        display: inline-block;
+        height: auto;
+    }
+}
+@media(max-width: 670px){
+    .contenidoEstandar{
+        width: 100%;
+    }
+}

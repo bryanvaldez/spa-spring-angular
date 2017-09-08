@@ -1,0 +1,45 @@
+.contenedorAutoridadesElegir{
+    margin-top:1vh;
+    max-height: 33vh;
+    overflow: auto;
+}
+
+.labelContbuton{
+    
+}
+
+
+.labelContbuton .estilosBotonGeneral {
+    height: 40px;
+    width: 40px;
+    min-height: initial;
+    min-width: inherit;
+}
+
+.labelContbuton .estilosBotonGeneral i {
+    font-size: 30px;
+    margin-top: 1px;
+}
+
+
+@media screen and  (min-width: 1600px)  {
+    
+.contenedorAutoridadesElegir{
+    margin-top: 1vh;
+    overflow: auto;
+    max-height: 36vh;
+}
+  
+    
+    
+}
+
+@media screen and  (max-width: 980px)  , screen and  (max-height:569px){
+.contenedorAutoridadesElegir{
+
+    margin-top:10px;
+    max-height: none;
+    overflow: auto;
+}
+
+}

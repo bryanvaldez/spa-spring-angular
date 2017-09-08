@@ -1,0 +1,83 @@
+.ListaMenuAcciones {
+    padding: 0;
+    margin: 0;
+}
+
+.ListaMenuAcciones ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ListaMenuAcciones ul li a {
+    width: 100%;
+    font-size: 15px;
+    height: 65px;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #1f547e;
+    
+}
+
+.ListaMenuAcciones ul li a button {
+    width: 100%;
+    font-size: 13px;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #1f547e;
+    white-space: normal;
+    text-align: left;
+    line-height: 1.5;
+    height: 100%;
+    margin: 0;
+    padding: 0 20px;
+}
+
+
+.ListaMenuAcciones ul li a button:hover {
+    color: #fff;
+}
+
+
+.ListaMenuAcciones ul li a:hover {
+    color: #fff;
+    background: #2da1a0;
+    box-shadow: 0 0 8px -1px rgba(8, 8, 8, 0.69);
+}
+
+.ListaMenuAcciones ul li a:active {
+    color: #fff;
+    background: #208a89;    
+}
+
+.cabeceraAcciones{
+    display: inline-flex;
+    justify-content: center;
+    -o-justify-content: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    -moz-justify-content: center;
+    align-items: flex-end;
+    -moz-align-items: flex-end;
+    -o-align-items: flex-end;
+    -webkit-align-items: flex-end;
+    -ms-align-items: flex-end;
+    background: #1f547e !important;
+}
+
+
+.cabeceraAcciones .md-button,  .cabeceraAcciones button{
+    background: transparent !important;
+}
+
+
+.cabeceraAcciones .md-button:hover, .cabeceraAcciones button:hover{
+    background: rgba(17, 54, 84, 0.66) !important; 
+}
+.ListaMenuAcciones ul li a i {
+margin-right: 5px;
+}
+
+

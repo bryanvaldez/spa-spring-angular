@@ -1,0 +1,417 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 17/07/2017, 11:50:45 AM
+    Author     : eparedes
+*/
+
+
+.contenedorAsignacionSolucionario{
+    width: 79%;
+    display: inline-block;
+    vertical-align: top;
+    z-index: 10;
+
+}
+
+.card-asignar{
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+    border: 0 !important;
+    z-index: 18;
+
+}
+
+.contenedorAsignacionSolucionario , .card-asignar{
+    height: 72.5vh;
+    overflow: auto;
+    position: relative;
+
+}
+
+
+.card-asignacion-solucion {
+    max-height: 82%;
+    text-align: center;
+    margin-top: 10px;
+    overflow: auto;
+}
+
+.card-solucion {
+    display: inline-block;
+    min-width: inherit;
+    width: 90%;
+}
+
+
+md-secondary-container{
+}
+
+.card-asignacion-solucion md-card{
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(240, 248, 255, 0);
+
+}
+
+.barra-titulo-card {
+    height: 43px;
+    background-color: #e9f1f1;
+    width: 100%;
+    position: absolute;
+    top: 21px;
+    z-index: -2;
+
+}
+
+
+.capsule-card {
+    padding: 12px;
+    font-size: 12px;
+}
+
+
+.capsule-card>div>img {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 4px;
+    margin-right: 10px;
+}
+
+.card-solucion-select .titulo-card, .card-solucion-select  .porcentaje-completados{
+    color: #fff;
+}
+
+.card-solucion-select .divider-card {
+    border-color: #2da1a0;
+}
+
+.card-solucion-select{
+    display: inline-block;
+    box-shadow: 0 0 8px #2da1a0;
+
+    -ms-transform: scale(1.03); /* IE 9 */
+    -webkit-transform: scale(1.03); /* Safari */
+    transform: scale(1.03);
+    width: 90%;
+    cursor: pointer;
+    outline: none;
+    animation-duration: 0.8s;
+    -moz-animation-duration: 0.8s;
+    -ms-animation-duration: 0.8s;
+    -o-animation-duration: 0.8s;
+    -ms-animation-duration: 0.8s;
+    animation-name: SolucionSelect;
+    -moz-animation-name: SolucionSelect;
+    -o-animation-name: SolucionSelect;
+    -ms-animation-name: SolucionSelect;
+    -webkit-animation-name: SolucionSelect;
+    animation-iteration-count: infinite;
+    -mos-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-direction: alternate;
+    -moz-animation-direction: alternate;
+    -webkit-animation-direction: alternate;
+    -ms-animation-direction: alternate;
+    -o-animation-direction: alternate;
+}
+
+
+
+@keyframes SolucionSelect {
+    from {
+
+    }
+
+    80%{
+
+    }
+    90%{
+        box-shadow: 0 0 5px 2.5px #2da1a0;
+    }
+
+    to {
+        box-shadow: 0 0 5px 2.5px #2da1a0;
+    }
+}
+
+.table  md-checkbox:not([disabled]).md-warn.md-checked .md-icon{
+    background-color: rgb(33, 164, 151);
+}
+
+.card-solucion-select  .barra-titulo-card{
+    background-color: #2da1a0;
+    background-image: url(../../img/texturaElement.png) !important;
+    opacity: 0.9;
+}
+.porcentaje-completados {
+    display: inline-block;
+    float: right;
+    margin-left: 11px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.titulo-card {
+    font-size: 20px;
+    font-weight: bold;
+}
+.botonabsoluto{
+    position: absolute;
+    right: 6px;
+    top: 3px;
+    margin:10px  0 ;
+}
+
+.TextsuperiorSolucion{
+    font-size: 12px;
+
+}
+
+.mensajeError{   
+    color: rgb(255, 0, 0);
+    font-size: 12px;
+}
+.text-total {
+    font-weight: bold;
+    font-size: 12px;
+    color: #1f547e;
+}
+
+.filtroBuscardorTabla{
+    position: relative;
+    align-items: center;
+    height: auto;
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+.filtroBuscardorTabla .EstiloInput {
+    margin: 0 10px;
+    max-width: 34vh;
+} 
+
+
+.tabla-card {
+    width: 100%;
+    text-align: center;
+    margin: 1.5vh 0px 0px 0px;
+    font-size: 12px;
+}
+/*************** tabla asignada *************/
+
+.table{
+    font-family: Roboto,Helvetica Neue,sans-serif;
+    min-width: 100%;
+}
+.table > tbody > tr:hover {
+    background-color: #59c1c0;
+    cursor: pointer;
+    color:#fff;
+}
+.table > tbody > tr {
+    background-color: #e8f1f1;
+}
+.table > tbody > tr > td{
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+    border-color: white;
+    padding: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 0;
+    border-spacing: 0;
+    padding-bottom: 2px !important;
+    padding-top: 2px !important;
+    border-spacing: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.tree-grid .level-1 .indented::before {
+
+    vertical-align: middle;
+}
+
+.inputWull{
+    width: 100%;
+    max-width: none !important;
+    margin: 8px 0 !important;
+}
+
+.table > tbody > tr > td > span{
+    font-family: Roboto,Helvetica Neue,sans-serif !important;
+    font-weight: bold;
+    font-style: normal !important;
+    vertical-align: middle;
+    text-overflow: ellipsis;
+    /* background: rgba(255, 0, 0, 0.15);*/
+    font-size: 11px;
+    max-width: 67%;
+    display: inline-block;
+    height: 15px;
+    width: auto;
+    padding: 8px;
+    overflow: hidden;
+}
+
+
+
+.table > tbody > tr > td > div{ 
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 11px;
+
+}
+
+.tree-grid .level-5 .indented {
+    position: relative;
+    left: 80px;
+    vertical-align: middle;
+}
+
+
+/*************** fin tabla asignada *************/
+
+.tree-grid .level-2 .indented {
+    position: relative;
+    left: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.divider-card {
+    border-top-width: 4px;
+    border-color: #1f547e;
+}
+
+.titulo-treetable-solucion{
+    display: block;
+
+    padding: 0;
+}
+
+@media(min-width: 1600px){ 
+    .contenedorAsignacionSolucionario , .card-asignar{
+        height: 77vh;
+    }
+    
+    .card-asignacion-solucion {
+    max-height: 86%;
+    }
+
+    .TextsuperiorSolucion{
+        font-size: 16px;
+    }
+
+    .text-total {
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .titulo-card {
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .porcentaje-completados {
+        display: inline-block;
+        float: right;
+        margin-left: 25px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+
+    .capsule-card {
+        padding: 14px;
+        font-size: 16px;
+    }
+
+    .capsule-card>div>img {
+        width: 56px;
+        height: 56px;
+        margin-bottom: 4px;
+        margin-right: 10px;
+    }
+
+    .tabla-card {
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 1200px){ 
+
+    .filtroBuscardorTabla .EstiloInput {
+        margin: 6px 6px;
+    }
+
+    .filtroBuscardorTabla .EstiloInput {
+        display: block;
+        max-width: 80%;
+    } 
+
+
+    .botonabsoluto{
+        position: relative;
+    }
+
+
+    .contenedorAsignacionSolucionario{
+        width: 69%;
+    }
+
+
+    .card-asignar{
+        width: 30%;
+        min-width: 30%;
+    }
+}
+
+@media screen and  (max-width: 990px)  , screen and  (max-height:569px){
+    .contenedorAsignacionSolucionario , .card-asignar{
+        height: auto;
+        margin: 10px 0;
+        width: 100%;
+        max-width: inherit;
+    }
+
+    .card-asignacion-solucion md-card{
+        width: 48.5%;
+        margin: 6px 0.5%;
+        display: inline-block;
+    }
+}
+
+@media(max-width: 670px){
+
+
+    .card-asignacion-solucion md-card{
+        width: 100%;
+        margin: 10px 0;
+    }
+
+}
+
+@-moz-document url-prefix() {   
+    
+    
+    .ColumnaFull {
+    max-height: 83.9vh;
+}
+
+
+         .titulo-card {
+    font-size: 19px;
+       }
+}

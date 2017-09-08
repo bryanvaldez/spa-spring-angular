@@ -1,0 +1,66 @@
+.botonFoter i {
+    font-size: 30px;
+    margin-top: 2px;
+}
+
+.OpcionesFooterGenerales{
+    /*height: 74px;*/
+    height: 53px;
+    background: #f5f9fc;
+    box-shadow: 3px 1px 13px -1px rgba(0,0,0,0.75);
+    width: 99.9%;
+    margin: 0;
+    overflow: hidden;
+    padding: 1px 4px;
+    margin-left: 0.1%;
+    position: relative;
+    z-index: 5;
+    display: table-row;
+    -moz-display: table-row;
+    -webkit-display: table-row;
+    -o-display: table-row;
+    -ms-display: table-row;
+    filter: display(display= table-row);
+    -khtml-display: table-row;
+
+}
+
+
+footer .colum2{
+    padding: 5px ;        
+}
+
+
+
+@media screen and  (max-width: 1200px){
+    .OpcionesFooterGenerales{
+        height: auto;
+        width: 99.9%;
+        display: block;
+        overflow: visible;
+    }
+}
+@media screen and  (max-width: 990px)  , screen and  (max-height:569px){
+    .OpcionesFooterGenerales{
+        overflow: auto;
+        height: auto;
+        padding: 0;
+    }
+
+    .OpcionesFooterGenerales{
+        display: block;
+    }
+
+
+    footer .colum2{
+        width: 100%;
+        text-align: center;
+
+
+    }
+
+    .OpcionesFooterGenerales{
+        display: block;
+    }
+
+}

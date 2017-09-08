@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rptElectoresPorAsignar" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isFloatColumnFooter="true" uuid="deb20d5d-8483-4843-9645-f3af8f6ac684">
+	<property name="ireport.zoom" value="1.7715610000000044"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="ONPE_LOGO" class="java.io.InputStream"/>
+	<parameter name="ELECCION" class="java.lang.String"/>
+	<parameter name="TITULO" class="java.lang.String"/>
+	<parameter name="DESC_GROUP" class="java.lang.String"/>
+	<parameter name="USUARIO" class="java.lang.String"/>
+	<field name="odpe_des" class="java.lang.String"/>
+	<field name="departamento" class="java.lang.String"/>
+	<field name="provincia" class="java.lang.String"/>
+	<field name="distrito" class="java.lang.String"/>
+	<field name="electores" class="java.lang.String"/>
+	<field name="mesas" class="java.lang.Integer"/>
+	<group name="groupOdpe">
+		<groupExpression><![CDATA[$F{odpe_des}]]></groupExpression>
+		<groupFooter>
+			<band height="1">
+				<break>
+					<reportElement uuid="89e61e5b-7b04-4d83-b24a-2cdd2741ea17" x="0" y="0" width="100" height="1"/>
+				</break>
+			</band>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="140" splitType="Stretch">
+			<image isUsingCache="true">
+				<reportElement uuid="f0204895-9dde-40fe-a85a-f180d74a0095" x="5" y="5" width="89" height="50"/>
+				<imageExpression><![CDATA[$P{ONPE_LOGO}]]></imageExpression>
+			</image>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="031ea5ee-3138-406e-b754-e2b85f58158b" x="104" y="5" width="346" height="50"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled"/>
+				<textFieldExpression><![CDATA['<style isBold="true" pdfFontName="Helvetica-Bold" size="11">' + $P{ELECCION} + '</style> ']]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="c978e0c8-3fce-4502-8c4a-8a00a2b274ff" x="7" y="58" width="540" height="18"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled"/>
+				<textFieldExpression><![CDATA['<style isBold="true" pdfFontName="Helvetica-Bold" size="11">' + $P{TITULO} + '</style> ']]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="8164c1c8-e4d7-4dd3-a0ab-22870921b15f" x="398" y="77" width="90" height="16"/>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Fecha del Reporte:]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement uuid="e9fcaea1-0348-472f-8675-9f2a9064f62b" x="447" y="77" width="100" height="16"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="f92888a1-464d-4539-969c-3a6d345e3bde" x="14" y="98" width="526" height="18"/>
+				<textElement verticalAlignment="Middle" markup="styled"/>
+				<textFieldExpression><![CDATA['<style isBold="true" pdfFontName="Helvetica-Bold" size="10">' + $P{DESC_GROUP} + ':  '+ $F{odpe_des} +'</style> ']]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement uuid="f6305d36-bb6a-449c-a47d-786354e5bdcd" x="14" y="120" width="527" height="20" backcolor="#CCCCCC"/>
+			</rectangle>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="e577bc91-f90e-43e7-a214-fb2ba82d60c1" x="16" y="121" width="115" height="18"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled"/>
+				<textFieldExpression><![CDATA['<style isBold="true" pdfFontName="Helvetica-Bold" size="10">DEPARTAMENTO</style> ']]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="b2cfabba-439f-4c3f-9b43-c41100a6989c" x="135" y="121" width="115" height="18"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled"/>
+				<textFieldExpression><![CDATA['<style isBold="true" pdfFontName="Helvetica-Bold" size="10">PROVINCIA</style> ']]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="331408a0-0ee5-43a6-bc26-51c5175ea2b1" x="254" y="121" width="115" height="18"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled"/>
+				<textFieldExpression><![CDATA['<style isBold="true" pdfFontName="Helvetica-Bold" size="10">DISTRITO</style> ']]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="13d2398e-b584-4f20-bcc8-c917286eac4d" x="374" y="121" width="75" height="18"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled"/>
+				<textFieldExpression><![CDATA['<style isBold="true" pdfFontName="Helvetica-Bold" size="10">ELECTORES</style> ']]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="1e458181-9f38-4285-af85-ea387b38cb55" x="457" y="121" width="80" height="18"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled"/>
+				<textFieldExpression><![CDATA['<style isBold="true" pdfFontName="Helvetica-Bold" size="10">MESAS</style> ']]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement uuid="f19bf2a9-5b25-4a56-bd0b-9da83aedb6bc" x="132" y="120" width="1" height="20"/>
+			</line>
+			<line>
+				<reportElement uuid="e8a38e26-436d-4ef0-b257-b806f56160db" x="251" y="120" width="1" height="20"/>
+			</line>
+			<line>
+				<reportElement uuid="5b26715a-78fb-4acd-8835-d1db06d9dcea" x="371" y="120" width="1" height="20"/>
+			</line>
+			<line>
+				<reportElement uuid="e5f4c707-1958-41b1-a9b2-30a5772f049c" x="452" y="120" width="1" height="20"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="19" splitType="Stretch">
+			<textField pattern="">
+				<reportElement uuid="c52461ca-1884-4331-93a3-f2982e46b98e" x="374" y="2" width="75" height="16"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{electores})]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="aa531cad-3d97-4700-b334-383ed96a2ac0" x="255" y="2" width="112" height="16"/>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{distrito}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="830067b4-c848-4d2a-a6ea-934a9974bc0f" x="16" y="2" width="112" height="16"/>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{departamento}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="b5a4fd79-99a2-41af-9e54-787a5bd69842" x="136" y="2" width="112" height="16"/>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{provincia}]]></textFieldExpression>
+			</textField>
+			<textField pattern="###,###,###">
+				<reportElement uuid="9113094a-c0d4-405d-88d3-3505b9bfb3ec" x="457" y="2" width="80" height="16"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{mesas}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="21" splitType="Stretch">
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="2e9b07bf-e2f5-4c66-b7d2-edc002a056c2" x="5" y="5" width="373" height="16"/>
+				<textElement verticalAlignment="Middle" markup="styled"/>
+				<textFieldExpression><![CDATA['<style size="9">Usuario: ' + $P{USUARIO} +'</style> ']]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="f96315f3-d337-437a-acdf-0ebcba20760b" x="436" y="5" width="92" height="16"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Pag.  "+$V{PAGE_NUMBER}+"  de "]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement uuid="a36b3246-8c2f-4249-9d3b-222bce1dfd47" x="5" y="0" width="545" height="1"/>
+			</line>
+			<textField evaluationTime="Report">
+				<reportElement uuid="b6be8fd4-7f80-448b-97e2-71a0f4df245a" x="448" y="5" width="100" height="16"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

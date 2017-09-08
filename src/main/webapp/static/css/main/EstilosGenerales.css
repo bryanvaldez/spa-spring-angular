@@ -1,0 +1,3388 @@
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    sizing: border-box;
+    font-family: arial;
+    font-style: normal;
+}
+
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+.CuerpoTotalProyecto md-sidenav{
+    width: 302px;
+    position: fixed;
+}
+
+
+
+.CuerpoTotalProyecto {
+    background: #fff;
+    overflow: auto;
+}
+
+.table-responsive{
+    width: 100%;
+    max-height: 48vh;
+    overflow: auto;
+    min-height: 180px;
+}
+
+.contenidoEstandar{
+    background-image: url(../../img/fondo.png) !important;
+    width: 100%;
+    display: block;
+    vertical-align: top;
+    margin: 0px 0px 0px -1px;
+    height: 100%;
+    z-index: 5;
+    -webkit-box-shadow: inset 1px 0px 13px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 1px 0px 13px -2px rgba(0,0,0,0.75);
+    box-shadow: inset 1px 0px 13px -2px rgba(0,0,0,0.75);
+    position: relative;
+
+}
+
+.columnaDiviTres {
+    display: inline-block;
+    vertical-align: top;
+    height: auto;
+    margin: 0px;
+    padding: 5px;
+    height: 100%;
+    max-height: 81.8vh; 
+    overflow: auto;
+    position: relative;
+    margin-top: 0.6vh;
+}
+
+
+.imagenompletaTotal{
+    background: #0b2d46;
+    width: 78%;
+    display: block;
+    margin: 0 auto;
+    animation-name: animaTarjetaFull;
+    -moz-animation-name: animaTarjetaFull;
+    -webkit-animation-name: animaTarjetaFull;
+    -ms-animation-name: animaTarjetaFull;
+    -o-animation-name: animaTarjetaFull;
+    animation-duration: 0.4s;
+    -moz-animation-duration: 0.4s;
+    -webkit-animation-duration: 0.4s;
+    -ms-animation-duration: 0.4s;
+    -o-animation-duration: 0.4s;
+
+}
+
+
+.EstadoActivo {
+    border: 5px solid #2da1a0;
+}
+.EstadoSuspendido {
+    border:5px solid #8a8a8a;
+}
+.EstadoCancelado  {
+    border: 5px solid #E94F3D;
+}
+.EstadoFinalizado {
+    border: 5px solid #1f547e;
+}
+
+.seccionEstado {
+       padding: 3px !important; 
+}
+
+.EstadoActivo .seccionEstado {
+    background: rgba(45, 161, 160, 0.16);
+}
+.EstadoSuspendido .seccionEstado {
+    background: rgba(84, 84, 84, 0.16);
+}
+.EstadoCancelado .seccionEstado {
+    background: rgba(233, 79, 61, 0.13);
+}
+.EstadoFinalizado .seccionEstado{
+    background: rgba(31, 84, 126, 0.15);
+}
+
+.columnaDiviTres:nth-child(odd)  {
+    padding-left: 0;
+    padding-right: 0;
+    width: 30%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+}
+
+
+.columnaDiviTres:nth-child(even)   {
+    width: 40%;
+    padding: 6px 5px;
+    overflow: hidden;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+.textoSoloDemostrativo{
+    color: #2da1a0;
+    margin: 10px;
+    font-weight: 700;
+}
+
+.ColumnaFull  {
+    display: inline-block;
+    vertical-align: top;
+    height: auto;
+    margin: 0px;
+    padding: 1.7vh;
+    height: 100%;
+    width: 100%;
+    max-height: 81.5vh;
+    overflow: auto;
+    display: inline-block;
+    align-items: center;
+}
+
+
+.ColumnaFull>form {
+    height: 100%;
+}
+
+
+.contenidoEstandar > div, 
+.contenidoEstandar > div > div ,
+.contenidoEstandar > div > div > div  {
+    height: 100%;
+    display: block;
+
+}
+
+.contenidoEstandar > div > div > div > form , 
+.contenidoEstandar > div > div > div > .contdmoree{
+    display: table;
+    -moz-display: table;
+    -webkit-display: table;
+    -o-display: table;
+    -ms-display: table;
+    -filter: display(display= table);
+    -khtml-display: table;
+    width: 100%;
+    height: 100%;
+
+}
+
+.contdmoree {
+    border-left: 1px solid #dcdcdc;
+}
+
+
+.contenidoEstandar  .centro {
+    display: inline-table !important;
+    -moz-display: inline-table !important;
+    -webkit-display: inline-table !important;
+    -o-display: inline-table !important;
+    -ms-display: inline-table !important;
+    filter: display(display= inline-table); 
+    -khtml-display: inline-table;
+}
+
+
+.contenidoEstandar  .centro .back-centro{
+    display: table-row;
+    -moz-display: table-row;
+    -webkit-display: table-row;
+    -o-display: table-row;
+    -ms-display: table-row;
+    filter: display(display= table-row);
+    -khtml-display: table-row;
+    height: 75px;
+
+}
+
+.contenidoEstandar  .centro .back-centro span{
+    background: #28557f;
+    padding: 10px;
+    margin: 4px;
+    width: 130px;
+    display: inline-block;
+    color: #fff;
+
+}
+
+.cuerpoProyecto {
+    width: 100%;
+    height: 91.1vh;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.divicionPartes {
+    margin: 20px 0;
+    width: 100%;
+    margin: 5px 0 ;
+    background: #194f81;
+    height: 2px;
+    -webkit-transition:0.4s; 
+    transition: 0.4s;
+}
+
+
+::-webkit-scrollbar  {
+    width: 8px;
+    background: #c3cbd0;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #8d959a;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #1f547e;
+    cursor: pointer;
+}
+
+
+::scrollbar  {
+    width: 8px;
+    background: #e6e5ef;
+    height: 8px;
+}
+
+::scrollbar-thumb {
+    background: #8d959a;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+::scrollbar-thumb:hover {
+    background:#1f547e;
+    cursor: pointer;
+}
+
+.alineadoIzquieda{
+    text-align: left;
+
+}
+
+
+.alineadoDerecha{
+    text-align: right;
+
+}
+
+.alineadoCentro{
+    text-align: center;
+}
+
+md-input-container.alineadoCentro input{
+    text-align: center;
+}
+
+.colum2{
+    width: 50%;
+    vertical-align: middle;
+    margin: 0 -1.5px;
+    display: inline-block;
+}
+
+.colum2Card{
+    width: 50%;
+    vertical-align: middle;
+    margin: 0 -1.5px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.coltrenintapor{
+    width: 30%;
+}
+
+
+.colSetentapor{
+    width: 70%;  
+
+}
+
+.ParteDividiaPreferencial , .ParteDividiaPreferencialPer{
+    width: 49.3%;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+
+}
+.ParteDividiaPreferencialPer{
+    padding: 0 !important;
+}
+
+
+.onpeReporteMapContenido .onpeReporteMapBlockTag {
+    font-size: 13px;
+    text-align: left;
+    padding: 0 0 10px 0;
+    color: #403c3c;
+    box-shadow: none;
+
+}
+
+
+.onpeReporteMapBlockTag  {
+    background: white;
+    padding: 0 !important;
+    margin: 5px 0;
+    box-shadow: 0 0 4px 0px rgba(0, 0, 0, 0.3);
+}
+
+
+.SistemaComentatext ,.labelContbuton{
+    font-size: 13px;
+    margin: 5px 0;
+
+}
+
+.alineado-Colu{
+    margin: -4px -1.5px;
+    padding: 0 8px;
+}
+
+.parteCompleta{
+    width: 100%;
+}
+
+
+.estilosBotonGeneral.md-fab{
+    width: 40px;
+    height: 40px;
+    /* min-width: 40px !important;*/
+}
+
+
+.estiloTarjetaCabecera{
+    background: #fff;
+    box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.2);
+    padding: 2vh;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+
+
+.estiloTarjeta{
+    background: #fff;
+    box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.2);
+    /* margin: 15px 15px 14px 15px; */
+    animation-name: animaTarjetaFull;
+    -moz-animation-name: animaTarjetaFull;
+    -webkit-animation-name: animaTarjetaFull;
+    -ms-animation-name: animaTarjetaFull;
+    -o-animation-name: animaTarjetaFull;
+    animation-duration: 0.4s;
+    -moz-animation-duration: 0.4s;
+    -webkit-animation-duration: 0.4s;
+    -ms-animation-duration: 0.4s;
+    -o-animation-duration: 0.4s;
+    overflow: auto;
+    padding: 2vh;
+    width: 100%;
+}
+
+
+@keyframes animaTarjetaFull {
+    0%   {
+        opacity: 0;
+        -ms-transform: scale(0.1); /* IE 9 */
+        -webkit-transform: scale(0.1); /* Safari */
+        transform: scale(0.1);
+    }
+
+    100% {
+
+    }
+}
+
+.cardProcesoElectoral{
+    min-width: 600px;
+    margin: 8px 13px;
+    max-width: 600px;
+    height: 530px;
+    /* overflow: auto; */
+    display: flex;
+    max-height: inherit;
+    align-items: initial;
+    justify-content: space-between;
+    padding: 21px !important;
+}
+
+
+.EstiloInput{
+    margin: 1.5vh  0;
+    display: inline-block;
+    padding-bottom: 7px;
+    height: 38px;
+}
+
+.Estiloselect{
+    margin: 0;
+    padding-bottom: 4px;
+}
+
+
+.divinormal {
+    height: 1px;
+    width: 100%;
+    background: #b8cecd;
+    margin: 10px auto;
+}
+.contentProcess {
+    height: 81.2vh !important;
+    overflow: auto;
+}
+
+
+.diviverticaMedi {
+    width: 1px;
+    height: 38vh;
+    background: #b8cecd;
+    margin: 0px 2px;
+    display: inline-block;
+}
+
+.divivertical{
+    width: 1px;
+    height: 57vh;
+    background: #b8cecd;
+    margin: 0px 2px;
+    display: inline-block;
+}
+
+.diviverticalPeque{
+    width: 1px;
+    height: 145px;
+    background: #b8cecd;
+    margin: 0px 2px;
+    display: inline-block;
+}
+.postSeparador{
+    padding-left: 10px;
+}
+.contenedorAutoridadesElegir>div{
+    height: 66px;
+    display: inline-flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 24px;
+}
+
+/************** tablas ***************/
+
+
+
+.botonIrPrincipal{
+    padding: 15px 44px !important;
+    height: auto !important;
+    max-height: none !important;
+}
+
+.botonIrPrincipalDos{
+    padding: 0px 44px !important;
+}
+
+
+.botonIrPrincipal i{
+    font-size: 18px;
+}
+
+
+
+.contenedorTablaNormal{
+    overflow: auto;
+}
+
+.estilosTablas{
+    border: 0;
+    width: 100%;
+    -webkit-box-shadow: 0px 0px 1px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 1px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 1px -1px rgba(0,0,0,0.75);
+    -o-box-shadow: 0px 0px 1px -1px rgba(0,0,0,0.75);
+    -ms-box-shadow: 0px 0px 1px -1px rgba(0,0,0,0.75);
+    margin: 10px 0;
+}
+
+.estilosTablas, .estilosTablas th,.estilosTablas td {
+    border: 0px solid black;
+    border-collapse: collapse;
+}
+.estilosTablas tr:nth-child(odd) {
+    background-color:#fff;
+}
+.estilosTablas tr:nth-child(even) {
+    background-color:#d7dadc;
+}
+
+.estilosTablas th{
+    background: #3f71a0;
+    color: #fff;
+    font-weight: 100;
+}
+
+.estilosTablas td{
+    text-align: center;
+}
+/************** fin tablas *****************/
+
+
+
+.alineadoIzquieda{
+    text-align: left;
+}
+
+
+.alineadoDerecha{
+    text-align: right;
+}
+
+.alineadoCentro{
+    text-align: center;
+}
+
+.tituloPincipal{
+    width: 100%;
+    text-align: left;
+    padding: 8px 8px 8px 0;
+    font-size: 21px;
+    margin: 7px 0 7px 0;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.textoSobresaliente{
+    color: #1f547e;
+}
+
+.logoSistemOnpe{
+    width: 105px;
+    margin-left: 5px;
+    padding: 4px 9px;
+
+}
+
+
+.ContenedorMantenimientoCard .tituloSecundario{
+    box-shadow: none; 
+}
+
+
+.tituloSecundario{
+    border-left: 9px solid #2da1a0;
+    width: 100%;
+    text-align: left;
+    padding: 8px;
+    margin: 7px 0 7px 0;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 15px;
+    background: #fff;
+    position: relative;
+    padding-right: 6vh;
+}
+
+.doblerau{
+    border-right: 9px solid #2da1a0;
+}
+/*********** estilos del mapa *******/
+/*
+.amcharts-chart-div>svg>g>g>g>path{
+    fill: rgb(45, 161, 160);
+    stroke: rgb(114, 222, 221);
+    fill-opacity: 0.8;
+    stroke-width: 3px;
+    stroke-opacity: 1;
+}
+*/
+/*********** fin estilos del mapa *******/
+.tituloTerciario{
+    border-left: 9px solid #2da1a0;
+    width: 100%;
+    text-align: left;
+    padding: 8px;
+    margin:  6px 0 6px 0;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+    background: #fff;
+    color:#252626;
+}
+
+.tituloCuarto{
+    border-bottom: 4px solid #2da1a0;
+    padding: 5px;
+    text-transform: uppercase;
+    color: #2da1a0;
+    font-size: 13px;
+    margin-bottom: 6px;
+    background: #fff;
+}
+
+
+.tituloQuinto{
+    border-left: 9px solid #dd8c09;
+    width: 100%;
+    text-align: left;
+    padding: 5px;
+    margin: 7px 0px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 13px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    height: 41px;
+}
+
+.estilosBotonGeneral{
+    background: #dd8c09 !important;
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    padding: 0 4vh;
+    min-width: initial;
+    max-width: none;
+    color: white !important;
+    font-size: 12px;
+    height: 26px;
+    min-height: 26px;
+    border-radius: 0;
+    line-height: 0;
+}
+
+.estilosBotonGeneral:hover , .SeleccionasImagenSolucion:hover{
+    background: #bd7808 !important;
+}
+
+.ImagenNuevaSolucion  .lf-ng-md-file-input-preview-container .lf-ng-md-file-input-x:hover{
+    background: #bd7808 !important;  
+}
+
+
+.cont-tarj .estilosBotonGeneral {
+    display: inline-flex !important;
+}
+
+.contenedorBotonPrincipalAccion{
+    display: flex;
+    height: auto;
+    margin: 0px;
+}
+
+.inputAnchoCompletoTitular{
+    width: 100% !important;
+    font-size: 17px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.guardadoConExito{
+    display: inline-block !important;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -ms-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    -ms-animation-duration: 2s;
+    animation-name: GuarExito;
+    -moz-animation-name: GuarExito;
+    -o-animation-name: GuarExito;
+    -ms-animation-name: GuarExito;
+    -webkit-animation-name: GuarExito;
+    animation-direction: alternate;
+    -moz-animation-direction: alternate;
+    -webkit-animation-direction: alternate;
+    -ms-animation-direction: alternate;
+    -o-animation-direction: alternate;
+    opacity: 0;
+
+}
+
+
+@keyframes GuarExito {
+    from {
+        -ms-transform: scale(0.1); /* IE 9 */
+        -webkit-transform: scale(0.1); /* Safari */
+        transform: scale(0.1);
+    }
+
+    30%{
+        opacity: 1;
+        -ms-transform: scale(1); /* IE 9 */
+        -webkit-transform: scale(1); /* Safari */
+        transform: scale(1);
+    }
+    70%{
+        opacity: 1;
+        -ms-transform: scale(1); /* IE 9 */
+        -webkit-transform: scale(1); /* Safari */
+        transform: scale(1);
+    }
+
+    to {
+        -ms-transform: scale(0.1); /* IE 9 */
+        -webkit-transform: scale(0.1); /* Safari */
+        transform: scale(0.1);
+    }
+
+}
+
+.guardadoConExito img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.ButonPrincipal {
+    font-size: 0px;
+    max-width: 100%;
+    display: inline-flex;
+    overflow: auto;
+    height: auto;
+    max-height: none;
+    white-space: pre-wrap;
+    text-align: center;
+    padding: 7px 34px;
+    line-height: 0px;
+    position:relative;
+    width: 100%;
+    margin: 4px 0 !important;
+    height: auto !important;
+    min-height: 45px !important;
+    font-weight: bold !important;
+}
+
+
+.verPrincialBtn{
+    max-width: 50px;
+    min-width: 50px;
+    margin-right: 5px !important;
+}
+
+.ButonPrincipal span  b{
+    width: 100%;
+    display: inline-block;
+    font-size: 18px !important;
+}
+.ButonPrincipal span{
+    width: 90%;
+    display: inline-block;
+    padding: 0;
+    white-space: normal;
+    margin: 3px !important;
+    font-size: 14px !important;
+}
+
+.ButonPrincipal i{
+    position: absolute;
+    right: 22px;
+    top: 50%;
+    height: 28px;
+    width: 28px;
+    margin-top: -14px !important;
+    /*background: rebeccapurple;*/
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.spanBotonGrande{
+    /*background: red;*/
+    margin: 0 !important;
+    margin-left: 10px !important;
+    display: inline-block !important;
+}
+
+.principalPaso{
+    animation-duration: 0.8s;
+    -moz-animation-duration: 0.8s;
+    -ms-animation-duration: 0.8s;
+    -o-animation-duration: 0.8s;
+    -ms-animation-duration: 0.8s;
+    animation-name: principalPaso;
+    -moz-animation-name: principalPaso;
+    -o-animation-name: ActualPasoResalt;
+    -ms-animation-name: principalPaso;
+    -webkit-animation-name: principalPaso;
+    animation-iteration-count: infinite;
+    -mos-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-direction: alternate;
+    -moz-animation-direction: alternate;
+    -webkit-animation-direction: alternate;
+    -ms-animation-direction: alternate;
+    -o-animation-direction: alternate;
+
+}
+
+md-input-container.md-default-theme .md-input-message-animation, md-input-container .md-input-message-animation, md-input-container.md-default-theme .md-input-messages-animation, md-input-container .md-input-messages-animation{    font-size: 12px;
+                                                                                                                                                                                                        font-size: 12px;
+}
+
+
+@keyframes principalPaso {
+    from {
+
+    }
+
+    60%{
+
+    }
+    90%{
+        box-shadow: 0 0 6px 1px rgb(0,150,136);
+    }
+
+    to {
+        box-shadow: 0 0 6px 1px rgb(0,150,136);
+    }
+
+}
+
+
+
+.estilosBotonGeneral.md-fab{
+    padding: 0vh;
+}
+
+.estilosBotonGeneral span {
+    line-height: 1.1;
+    margin: 6px;
+    font-size: 11px;
+}
+
+.estilosBotonGeneral  i {
+    margin: 0 15px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.estilosBotonGeneral:disabled , .onpeAdanAsignar .onpeAdanAsignarFooter .buttonFalse:disabled{
+    background: #b2b2b2 !important;
+    opacity: 0.65;
+
+    cursor: no-drop;
+}
+
+.estilosBotonGeneral:disabled:hover  , .onpeAdanAsignar .onpeAdanAsignarFooter .buttonFalse:disabled:hover{
+    background: #b2b2b2 !important;
+    opacity: 0.65;
+    cursor: no-drop;
+
+
+}
+
+.ListadoAparecer .listaRetro .estilosBotonGeneral:disabled {
+    background: #b2b2b2 !important;
+    opacity: 0.65;
+
+    cursor: no-drop;
+}
+
+
+.ListadoAparecer .listaRetro .estilosBotonGeneral:disabled  {
+    border-right: 9px solid #000 !important;
+}
+
+.listaRetro li .estilosBotonGeneral:disabled:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 16px solid #000 !important;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    right: -18px;
+}
+
+.listaRetro li .estilosBotonGeneral:disabled:hover:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 16px solid #000 !important;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    right: -18px;
+}
+
+
+.tipoSolucionIcon{
+    height: 8vh;
+    width: 8vh;
+    border: 3px solid #db8c0b;
+    vertical-align: middle;
+    min-height: 56px;
+    min-width: 56px;
+}
+
+.selectWidthConpleto{
+    max-width: 299px;
+    width: 100%;
+    min-width: initial;
+}
+
+
+.inputfull{
+    width: 100%;
+    font-size: 15
+}
+
+.inputmedio{
+    width: 49.31%;
+}
+
+.ReferenciaCentroPoblado  {
+    width: 100%;
+}
+.CheckCentroPo{
+    margin-bottom: 7px !important;
+}
+
+.ContenedorMantenimientoCard .contenedorshishtStandar{
+    margin-top: -13px;
+    margin-bottom: -7px;
+}
+
+
+.InputSinError .md-errors-spacer{
+    display: none !important;
+    background: red;
+}
+
+.InputSinError  .md-input-messages-animation{
+    margin-bottom: -20px;
+}
+
+
+.radioJuntos{
+    margin: 15px 0;
+    display: block;
+    height: auto;
+}
+
+.radioJuntos .md-label{
+    font-size: 12px;
+}
+
+
+.radioJuntos md-radio-button{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.inputPeque{
+    width: 80px;
+}
+
+.inputPequerespo{
+    width: 60%;
+}
+
+.butonpekeAsignado{
+    height: 28px !important;
+    width: 28px !important;
+    max-height: 28px !important;
+    max-width: 28px !important;
+    min-height: inherit;
+}
+
+.butonpekeAsignado i{
+    font-size: 19px;
+}
+
+.butonpekeAsignado .material-icons{
+
+}
+
+.cargarDatosInputCont{
+
+    display: inline-block;
+    vertical-align: top;
+    padding: 6px 0px 0 0;
+    min-width: 320px;
+    margin: 0 8px;
+    position: relative;
+}
+
+ .cargarDatosInputCont div>div{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.TarjetaContenedorCarscaled .cargarDatosInputCont div>div{
+    overflow: hidden;
+}
+
+.cargarDatosInputCont>.ng-binding{
+    position: absolute;
+    z-index: 10;
+    bottom: -11px;
+    color: #dd2c00;
+    font-size: 12px;
+}
+
+
+.subirArhicoSistema{
+    display: inline-block;
+    vertical-align: bottom;
+    width: 100%;
+    max-width: 456px;
+    margin: 0 14px;
+}
+
+.alineadoRadio{
+    position: relative;
+    padding: 12px 0;
+}
+
+.botoposidere{
+    position: absolute;
+    right: 0;
+    top: 0;
+
+}
+
+.alineadoRadio  md-radio-group{
+    display: inline-flex;
+}
+
+/************* conponentes de pagina principal ***************/
+
+.onpeReporteMapContenido .onpeReporteMapBarGenero .onpeReporteMapBarLeft{
+    background-image: url(../../img/texturaBarraCarga3.png) !important;
+    position: absolute;
+    left: 0;
+    top: 0;    
+}
+.onpeReporteMapContenido .onpeReporteMapBarGenero .onpeReporteMapBarRight{
+    background-image: url(../../img/texturaBarraCarga2.png) !important;
+    position: absolute;
+    right: 0;
+    top: 0;   
+}
+
+.onpeReporteMapContenido .onpeReporteMapBarGenero .onpeReporteMapBarLeft:before {
+    content: "";
+    background-image: url(../../img/texturaBarraCarga3.png) !important;
+    width: 100%;
+    height: 100%;
+    z-index: 1
+}
+.onpeReporteMapContenido .onpeReporteMapBarGenero .onpeReporteMapBarRight:before{
+    content: "";
+    background-image: url(../../img/texturaBarraCarga2.png) !important;
+    width: 100%;
+    height: 100%;
+    z-index: 1
+
+}
+
+.onpeReporteMapContenido .onpeReporteMapBarGenero .onpeReporteMapBarLeft:before ,
+.onpeReporteMapContenido .onpeReporteMapBarGenero .onpeReporteMapBarRight:before{
+
+    position: absolute;
+    animation-duration:1.5s;
+    -moz-animation-duration: 1.5s;
+    -ms-animation-duration: 1.5s;
+    -o-animation-duration: 1.5s;
+    -ms-animation-duration: 1.5s;
+    animation-name: CargadorBarra;
+    -moz-animation-name: CargadorBarra;
+    -o-animation-name: CargadorBarra;
+    -ms-animation-name: CargadorBarra;
+    -webkit-animation-name: CargadorBarra;
+    animation-iteration-count: infinite;
+    -mos-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-direction: normal;
+    -moz-animation-direction: normal;
+    -webkit-animation-direction: normal;
+    -ms-animation-direction: normal;
+    -o-animation-direction: normal;
+    animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
+    -ms-animation-timing-function: linear;
+
+
+}
+
+@keyframes CargadorBarra {
+    from {
+
+
+    }
+
+    to {
+        background-position: 80px;
+    }
+}
+
+.onpeReporteMapContenido md-list{
+    padding: 0;
+}
+
+.onpeReporteMapContenido .onpeReporteMapSubBlockBtn {
+    background: #dd8c09 !important;
+    color: #fff;
+    width: 40%;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.onpeReporteMapContenido .onpeReporteMapSubBlockBtn i {
+    font-size: 20px;
+    margin-top: 0;
+    /* float: right; */
+    margin: 0;
+}
+
+.onpeReporteMapContenido .onpeReporteMapBarLocales{
+    width: 100%;
+    background: #901e10;
+    height: auto;
+    overflow: hidden;
+    height: 44px;
+    position: relative;
+    margin-top: 7px;
+}
+
+.onpeReporteMapContenido .onpeReporteMapBarLocales .onpeReporteMapBarLeft{
+    position: relative;
+}
+
+.onpeReporteMapContenido .onpeReporteMapBarLocales .onpeReporteMapBarLeft:before{
+    content: "";
+    background-image: url(../../img/texturaBarraCarga1.png) !important;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation-duration:1.5s;
+    -moz-animation-duration: 1.5s;
+    -ms-animation-duration: 1.5s;
+    -o-animation-duration: 1.5s;
+    -ms-animation-duration: 1.5s;
+    animation-name: CargadorBarra;
+    -moz-animation-name: CargadorBarra;
+    -o-animation-name: CargadorBarra;
+    -ms-animation-name: CargadorBarra;
+    -webkit-animation-name: CargadorBarra;
+    animation-iteration-count: infinite;
+    -mos-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-direction: normal;
+    -moz-animation-direction: normal;
+    -webkit-animation-direction: normal;
+    -ms-animation-direction: normal;
+    -o-animation-direction: normal;
+    animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
+    -ms-animation-timing-function: linear;
+    left: 0;
+    top: 0;    
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.54);
+    z-index: 1;
+}
+
+.onpeReporteMapBarLeft, .onpeReporteMapBarRight{
+    display: inline-flex;
+    -moz-display: inline-flex;
+    -webkit-display: inline-flex;
+    -o-display: inline-flex;
+    -ms-display: inline-flex;
+    align-items: center;
+    -moz-align-items: center;
+    -o-align-items: center;
+    -ms-align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+    animation-name: barAnimation;
+    -moz-animation-name: barAnimation;
+    -webkit-animation-name: barAnimation;
+    -ms-animation-name: barAnimation;
+    -o-animation-name: barAnimation;
+    animation-duration: 0.8s;
+    -moz-animation-duration: 0.8s;
+    -webkit-animation-duration: 0.8s;
+    -ms-animation-duration: 0.8s;
+    -o-animation-duration: 0.8s;
+    overflow: hidden;
+    height: 35px;
+    vertical-align: top;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.54);
+}
+
+
+.onpeReporteMapBarLeft span, .onpeReporteMapBarRight span, onpeReporteMapBarLocales span {
+    display: block;
+    text-align: center;
+    margin: 10px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 13px;
+    z-index: 10;
+}
+.onpeReporteMapBarLeft, .onpeReporteMapBarRight{
+    display: inline-flex;
+    -moz-display: inline-flex;
+    -webkit-display: inline-flex;
+    -o-display: inline-flex;
+    -ms-display: inline-flex;
+    align-items: center;
+    -moz-align-items: center;
+    -o-align-items: center;
+    -ms-align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+    animation-name: barAnimation;
+    -moz-animation-name: barAnimation;
+    -webkit-animation-name: barAnimation;
+    -ms-animation-name: barAnimation;
+    -o-animation-name: barAnimation;
+    animation-duration: 0.8s;
+    -moz-animation-duration: 0.8s;
+    -webkit-animation-duration: 0.8s;
+    -ms-animation-duration: 0.8s;
+    -o-animation-duration: 0.8s;
+    overflow: hidden;
+    height: 35px;
+    vertical-align: top;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.54);
+}
+
+
+.onpeReporteMapContenido .onpeReporteMapBarGenero{
+    width: 100%;
+    background: #112c42;
+    height: auto;
+    overflow: hidden;
+    height: 40px;
+    position: relative;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.32);
+}
+
+.etiquetasBuscador{
+    display: inline-block;
+    width: 100%;
+}
+
+.etiquetasBuscador md-chips-wrap  md-chip , .etiquetaBuscada{
+    background: #fff;
+    border: 2px solid #5f5f5f;
+    padding: 5px 16px 3px 16px!important;
+    line-height: 1;
+    margin: 2px;
+    display: inline-flex;
+    align-items: center;
+    height: auto;
+    font-weight: 600;
+    color: #5f5f5f;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 12px;
+}
+
+.inputWull{
+    width: 100%;
+}
+.buscarFull {
+    position: relative;
+}
+.buscarFull md-autocomplete-wrap input{
+    width: 100%;
+    padding: 0 0 0 35px !important;
+}
+
+.buscarFull:before{
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 27px;
+    position: absolute;
+    bottom: 3px;
+    z-index: 10;
+    left: 6px;
+    background-image: url(../../img/lupa.svg);
+    background-size: 118%;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+}
+
+.seccionDatosbordeado  md-card-title{
+    padding: 0;
+}
+
+
+.titulosEccionWidthOption{
+    max-width: 75%;
+    /* background: red;*/
+}
+.seccionDatosbordeado{
+    border-top: 6px solid;
+    margin: 5px 0;
+}
+
+
+.TextitoBad{
+    position: absolute;
+    z-index: 10;
+    bottom: -11px;
+    color: #dd2c00;
+    font-size: 12px;
+}
+
+.TextitoOk{
+    position: absolute;
+    z-index: 10;
+    bottom: -11px;
+    font-size: 12px;
+    color:#2da1a0;
+}
+
+.conenedorSubidArchivosDos{
+    position: relative;
+}
+
+
+.elementoInexistente{
+    display: none;
+}
+
+.conenedorSubidArchivosDos .lf-ng-md-file-input-button-remove,
+.cargarDatosInputCont div .lf-ng-md-file-input-button-remove {
+    background: #dd8c09;
+
+    margin: 0 2px !important;
+    color: #fff;
+}
+
+
+.conenedorSubidArchivosDos .lf-ng-md-file-input .lf-remove,
+.cargarDatosInputCont .lf-ng-md-file-input .lf-remove,
+.cargarDatosInputCont div div .lf-ng-md-file-input .lf-remove {
+
+    background-image: url(../../img/ico-eliminar.svg) !important;
+
+}
+
+
+.conenedorSubidArchivosDos .lf-ng-md-file-input-button-remove:hover ,
+.cargarDatosInputCont div .lf-ng-md-file-input-button-remove:hover {
+
+    background: #bd7808 !important;
+}
+
+/*
+.columnaDiviTres:nth-child(odd) onpe-reporte-electores ,
+.columnaDiviTres:nth-child(odd) onpe-reporte-electores-low
+.columnaDiviTres:nth-child(odd) onpe-reporte-electores-low {
+        transform: scale(0.9);
+        background: red;
+        margin: -15px;
+}*/
+
+.conenedorSubidArchivosDos .TextitoBad{
+    position: absolute;
+    z-index: 10;
+    top: 74px;
+    left: 15px;
+    bottom: auto;
+    color: #dd2c00;
+    font-size: 12px;
+}
+
+.conenedorSubidArchivosDos .TextitoOk{
+    position: absolute;
+    z-index: 10;
+    top: 74px;
+    left: 17px;
+    bottom: auto;
+    font-size: 12px;
+    color: #2da1a0;
+}
+
+
+.butonOpcionDesplegablePrincipal{
+    display: inline-flex;
+    height: 100px;
+    vertical-align: top;
+    width: 100%;
+    margin: 0;
+    flex-direction: inherit !important;
+    text-align: center;
+    justify-content: center;
+    padding-top: 0;
+    align-items: baseline;
+    background: white;
+    box-shadow: 0 0 5px -1px rgba(0, 0, 0, 0.47);
+    margin-top: -8px;
+}
+
+
+
+
+.butonOpcionDesplegablePrincipal md-fab-trigger  .md-button{
+
+    color: #fff !important;
+    border: 0;
+    box-shadow: none;
+    padding: 0;
+    border-radius: 0;
+    display: inline-flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0) !important;
+}
+
+.butonOpcionDesplegablePrincipal md-fab-trigger  .md-button:hover{
+
+    background: rgba(255, 255, 255, 0) !important;
+}
+
+.butonOpcionDesplegablePrincipal md-fab-trigger img {
+    width: 100% !important;
+    margin: 0 !important;
+}
+
+.contDatosSolucionLocalReasigPrincipal {
+    position: absolute;
+    bottom: -24px;
+    left: -9px;
+    background: #fbfdff;
+    color: #403c3c;
+    padding: 19px 5px 7px 5px;
+    text-align: center;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.34);
+    width: 105px;
+    font-weight: 800;
+    /* font-size: 19px; */
+}
+
+
+.contDatosSolucionLocalReasigPrincipal  span{
+    font-size: 15px; 
+}
+
+/************* seccion Buscador principal****************/
+
+.radioBuscador{
+    display: block;
+    padding: 10px 8px;
+    background: #fff;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.17);
+}
+
+.formatoBlanco{
+    display: block;
+    padding: 5px;
+    background: #fff;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.17);
+}
+
+.radioBuscador md-radio-button .md-off, 
+.radioBuscador md-radio-button.md-checked .md-off{
+    border-color: rgb(221, 140, 9);
+}
+.radioBuscador  md-radio-button .md-on{
+    background-color: rgb(221, 140, 9);
+}
+
+
+.radioBuscador md-radio-button{
+    display: inline-block;
+    margin: 2px 4px;
+    font-size: 12px;
+    outline: none;
+}
+
+.checkboxEstiloSistem .md-label{
+    font-size: 13px;
+}
+
+
+.radioBuscador md-radio-button .md-off, 
+.radioBuscador md-radio-button.md-checked .md-off{
+    border-color: rgb(221, 140, 9);
+}
+.radioBuscador  md-radio-button .md-on{
+    background-color: rgb(221, 140, 9);
+}
+
+
+.radioBuscador md-radio-button{
+    display: inline-block;
+    margin: 2px 4px;
+    font-size: 12px;
+    outline: none;
+}
+
+
+.radioBuscador md-radio-button .md-off, 
+.radioBuscador md-radio-button.md-checked .md-off{
+    border-color: rgb(221, 140, 9);
+}
+.radioBuscador md-radio-button .md-label {
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    margin-left: 25px;
+    margin-right: 0;
+    vertical-align: middle;
+    white-space: normal;
+    pointer-events: none;
+    width: auto;
+}
+
+.alineraImportante{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedorSimpleArtic{
+    display: block;
+    height: auto;
+    min-height: auto;
+    padding: 5px;
+    background: transparent !important;
+}
+
+.onpeReporteMapContenido .onpeReporteMapSubBlockBtn span{
+    font-size: 12px;
+    color: #fff;
+    margin: 0px 8px;
+    padding: 0;
+}
+
+.onpeReporteMapContenido .onpeReporteMapBarCantidad , .onpeReporteMapBarCantidad{
+    background: #ffffff;
+    color: #fff;
+    text-align: center;
+    padding: 7px 10px;
+    font-size: 29px;
+    font-weight: bold;
+    margin: 0;
+    color: #403c3c;
+    box-shadow: 0 0 4px 0px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 16;
+}
+
+/*************  pruebas maquina scaner*****/
+
+.tarjetaDasboardPrincipal .flex-30 .onpeReporteMapContenido .onpeReporteMapSubBlockBold{
+    display: block;
+    border-left: 0 !important;
+    padding: 0;
+    margin: 0;
+        width: 100%;
+}
+
+.tarjetaDasboardPrincipal .flex-30 .onpeReporteMapContenido  .onpeReporteMapSubBlockBoldTag{
+     border-left: 8px solid #1f547e;
+    padding: 0 0 0 8px;
+    margin: 5px 0;
+    width: 100%;
+    height: 36px;
+    display: inline-flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 14px;
+}
+.tarjetaDasboardPrincipal .flex-30 .onpeReporteMapContenido .onpeReporteMapSubBlockData{
+        box-shadow: 0 0 4px 0px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 8px 0;
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+/*******************/
+
+.onpeReporteMapContenido .onpeReporteMapSubBlockBoldTag{
+    font-size: 11px;
+    text-align: left;
+    padding: 0;
+    font-weight: bold;
+    width: 60%;
+    color: #3e3e3e;
+}
+
+.onpeReporteMapContenido .onpeReporteMapSubBlockData{
+    background: transparent;
+    color: #009688;
+    width: 40%;
+    text-align: right;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+    padding-right: 15px;
+}
+
+.onpeReporteMapContenido .onpeReporteMapSubBlockBold {
+    font-size: 18px;
+    text-align: left;
+    padding: 0;
+    font-weight: bold;
+    background: white;
+    border-left: 8px solid #1f547e;
+    padding: 0px 10px;
+    min-height: inherit;
+    height: auto;
+    margin: 3px 0;
+    margin-top: 9px;
+}
+
+.onpeReporteMapContenido .onpeReporteMapSubBlockBold:before{
+    content: "";    
+    min-height: 32px;
+}
+
+.contenidoTituloMantenimiento{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    border: 6px solid;
+    color: #1f547e;
+    padding: 0;
+    background: #fff;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.46);
+    z-index: 10;
+}
+
+.contenidoTituloMantenimiento md-input-container{
+    width: 90%;
+    margin: 21px 15px 1px 15px;
+    padding: 2px 5px;
+}
+
+.EstadoOkMantenimiento{
+    border-color: #4CAF50 !important;
+}
+
+.SeccionBotonesTituloRecuadro{
+    width: 18% !important;
+    text-align: center;
+    margin: 10px !important;
+}
+
+
+.EstadoOkMantenimiento h1{
+    text-align: center;
+    padding: 0;
+    margin: 6px;
+}
+
+.EstadoErrorMantenimiento{
+    border-color: #ffa827 !important;
+}
+
+.heightUsuario{
+        height: 78vh !important;
+}
+
+.ContenedorMantenimientoCard{
+    width: 100%;
+    border: 6px solid;
+    color: #1f547e;
+    padding: 0;
+    background: #fff;
+    margin: 0 auto;
+    margin-top: -26px;
+    padding-top: 17px;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.46);
+    font-size: 14px;
+    height: 436px; 
+    overflow: auto;
+}
+.contenedorshishtStandar{
+    width: 100%;
+    margin: 0 -1px;
+    display: inline-flex;
+    padding: 5px;
+    vertical-align: top;
+    height: 47px;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 12px;
+    color: #009688;
+    font-size: 15px;
+}
+
+.contenedorshishtStandar md-switch{
+    margin: 0 8px;
+    margin-top: 5px;
+}
+
+.contenidoOpcionaAciones{
+    width: 100%;
+    border: 5px solid;
+    color: #2da1a0;
+    padding: 0;
+    background: #fff;
+    margin: 0 auto;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.46);
+    position: relative;
+    margin-top: 30px;
+}
+
+.contenidoOpcionaAciones .tituloTerciario{
+    border-left: 9px solid #2da1a0;
+    text-align: left;
+    padding: 8px;
+    margin: 6px 0 1.3vh 0;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 16px;
+    background: #fff;
+    top: -31px;
+    position: absolute;
+    width: 86%;
+    box-shadow: 0 0 2px 0px rgba(10, 10, 10, 0.52);
+}
+
+.footerAppliOpciones{
+    display: table-row;
+    -moz-display: table-row;
+    -webkit-display: table-row;
+    -o-display: table-row;
+    -ms-display: table-row;
+    filter: display(display= table-row);
+    -khtml-display: table-row;
+    height: 19px;
+}
+.contenidoOpcionaAciones .md-padding{
+    height: 40vh;
+    display: table;
+    -moz-display: table;
+    -webkit-display: table;
+    -o-display: table;
+    -ms-display: table;
+    -khtml-display: table;
+    width: 100%;
+    padding-top: 4vh;
+}
+
+.butonOpcionDesplegable{
+    display: inline-flex;
+    height: 88px;
+    vertical-align: top;
+    width: 100%;
+    margin: 0;
+    flex-direction: inherit !important;
+    text-align: center;
+    justify-content: center;
+    padding-top: 0;
+    align-items: baseline;
+}
+
+.contDatosSolucionLocalReasig{
+    position: absolute;
+    bottom: -24px;
+    left: -9px;
+    background: #1f547e;
+    color: #fff;
+    padding: 19px 7px 7px 7px;
+    text-align: center;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.34);
+    width: 90px;
+}
+
+
+
+
+
+.contDatosSolucionLocalReasig span{
+    display: inline-block;
+    width: 100%;
+    font-size: 14px;
+}
+.butonOpcionDesplegable md-fab-trigger {
+    position: relative;
+}
+.butonOpcionDesplegable md-fab-trigger   img{
+    width: 87%;
+    margin: 26% 8%;
+}
+
+.butonOpcionDesplegable  md-fab-actions img{
+    width: 87%;
+    margin: 37% 8%;
+}
+
+.butonOpcionDesplegable  md-fab-actions  .md-button{
+    border: 3px solid #1f547e;
+    background: #fff !important;
+
+}
+.butonOpcionDesplegable md-fab-trigger    .md-button{
+    border: 3px solid #2da1a0;
+    background: #fff !important;
+
+}
+.botonResaltantes{
+    width: 100%;
+    padding: 7px;
+    height: auto;
+    font-size: 24px;
+    margin: 0;
+}
+
+.butonOpcionDesplegable md-fab-trigger   .agregarSolucionLocal{
+    background: #2da1a0 !important;
+    color: #fff !important;;
+}
+
+.butonOpcionDesplegable md-fab-trigger   .agregarSolucionLocal i {
+    font-size: 42px;
+    margin: 5px 0px;
+}
+
+
+.TarjetiaNMesa{
+    width: 40%;
+    margin: 6px 3.5%;
+    border: 1px solid #2da1a0;
+    text-align: center;
+    box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.46);
+    position: relative;
+    padding: 7px 4px    ;
+    display: inline-block;
+}
+
+.TarjetiaNMesa h2{
+    font-size: 20px;
+    color: #2da1a0;
+    text-align: center;
+    line-height: 1;
+}
+
+.TarjetiaNMesa span{
+    font-size: 11px;
+    color:#777;
+}
+.TarjetiaNMesa .imgSolu{
+    border-radius: 50%;
+    box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.46);
+    position: absolute;
+    right: -20px;
+    width: 35px;
+    height: 35px;
+    background: #fff;
+    top: 50%;
+    margin-top: -18px;
+    border: 1px solid #36a5a4;
+    overflow: hidden;
+}
+
+.TarjetiaNMesa .imgSolu img{
+    height: 76%;
+    margin: 3px;
+}
+
+.cardProcesoElectoral  .butuonDashPrincipal {
+    margin: 0 !important;
+}
+
+
+
+.textoFechaInferiorDescriptiva{
+    margin-top:-22px;
+}
+
+
+
+/****** estilos generales*******/
+
+.onpeReporteMapContenido .onpeReporteMapBlock {
+    font-size: 15px;
+    text-align: left;
+    padding: 0;
+    background: #fff;
+    border-left: 8px #2da1a0 solid;
+    padding: 1px 15px;
+}
+
+.estilosBotonGeneral.md-fab{
+    margin: 0 5px;
+}
+
+.TablaEstiloSis{
+
+    font-family: Roboto,Helvetica Neue,sans-serif;
+    min-width: 100%;
+    font-size: 12px;
+}
+.TablaEstiloSis > thead > tr> th {
+    background-color: #59c1c0;
+    cursor: default;
+    cursor: pointer;
+    padding: 8px 10px;
+    color:#fff;
+
+}
+.TablaEstiloSis > tbody > tr {
+    background-color: #e8f1f1;
+}
+.TablaEstiloSis > tbody > tr > td{
+    border-style: solid;
+    padding: 2px 10px;
+
+    border-width: 0px 0px 0px 0px;
+    border-color: white;
+    line-height: 1;
+    border-spacing: 0;
+    border-spacing: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+}
+
+.TablaEstiloSis > tbody > tr > td > span{
+    font-family: Roboto,Helvetica Neue,sans-serif !important;
+    font-weight: bold;
+    font-style: normal !important;
+    vertical-align: middle;
+    font-size: 11px;
+    display: inline-block;
+    padding: 16px 10px;
+    width: auto;
+    padding: 8px;
+    overflow: hidden;
+    padding: 14px 0;
+}
+
+
+.TablaEstiloSis .estilosBotonGeneral.md-fab {
+    margin: 3px 5px;
+}
+
+.listaReglasPrestablecidas{
+    text-align: left;
+}
+
+
+.listaReglasPrestablecidas{
+    counter-reset: item;
+    padding: 0 0px 0 42px;
+    margin: 10px 0;
+}
+
+.listaReglasPrestablecidas li{
+    margin: 1vh 0;
+    list-style: none;
+    padding: 4px 8px;
+    position: relative;
+    font-size: 12px
+}
+
+.articulodeBusqueda{
+    background: #fff;
+    box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.45);
+}
+
+.EspacioTabsSeleccionados {
+    padding: 7px;
+    height: auto;
+    overflow: initial;
+}
+
+
+
+.ContenedorSolucionesScroll{
+    max-height: 32vh;
+    overflow: auto;
+    margin-top: 1.5vh;
+    padding: 5px;
+
+}
+
+.onpeAdanAsignar .onpeAdanAsignarBody .onpeAdanAsignarTitle{
+    margin-top: -42px;
+    padding-left: 15px;
+    background-color: rgb(250,250,250);
+    vertical-align: middle;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    border-bottom: 4px solid #009688;
+    border-left: 11px solid #009688;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.39);
+    padding: 11px;
+    margin-bottom: 21px;
+
+}
+
+
+.onpeAdanAsignar .onpeAdanAsignarBody{
+    margin: 0 10px;
+    height: 170px;
+    border-left: 5px solid #009688;
+    border-right: 5px solid #009688;
+    border-top: 5px solid #009688;
+    border-bottom: 5px solid #009688;
+    padding: 10px 15px;
+    background-color: #fff;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.39);
+}
+
+.onpeAdanAsignar .onpeAdanAsignarFooter{
+    margin: -49px 15px 0 15px;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.39);
+}
+
+.onpeAdanAsignar .onpeAdanAsignarFooter .buttonFalse {
+    background: #dd8c09;
+    color: #fff;
+    text-align: center;
+    padding: 4px 10px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    cursor: not-allowed;
+    width: 100%;
+}
+
+
+
+
+/*
+.listaReglasPrestablecidas li:before {
+ display: inline-flex;
+    content: counter(item) "- ";
+    counter-increment: item;
+  
+    color: #2da1a0;
+    font: bold 16px Arial, Verdana;
+    padding: 0 4px;
+    margin: 0;
+    font-size: 26px;
+    position: absolute;
+    left: -44px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+}
+*/
+.listaReglasPrestablecidas li span {
+    display: inline-flex;
+    content: counter(item) "- ";
+    counter-increment: item;
+    /* background-color: #673AB7; */
+    color: #2da1a0;
+    font: bold 16px Arial, Verdana;
+    padding: 0 4px;
+    margin: 0;
+    font-size: 26px;
+    position: absolute;
+    left: -44px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+}
+
+
+
+
+.listaReglasPrestablecidas li .listaReglasPrestablecidas li:before{
+    font: bold 14px Arial, Verdana;
+    padding: 0 2px;
+}
+
+/************************************/
+/************* elector **************/
+/************************************/
+
+.datosPrincipalElector{
+    text-align: center;
+    margin-top: 3vh;
+}
+.fotoElector{
+    width: 99px;
+    height: 121px;
+    display: inline-block;
+    vertical-align: middle;
+    border: 4px solid #008b99;
+    box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.52);
+}
+
+
+.datosElectir{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    color: #008b8b;
+    padding: 10px;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.datosSecundariosElector{
+    text-align: center;
+    line-height: 2;
+    font-size: 12px;
+    color: #232323
+
+}
+
+.datosSecundariosElector strong{
+    font-size: 28px;
+    color: darkcyan;
+    line-height: 31px;
+    margin: 20px 0 22px 0;
+    text-align: center;
+    display: inline-block;
+
+}
+
+.datosSecundariosElector .datoExtran {
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px 0px;
+    text-align: left;
+    width: 50%;
+}
+
+.contenedorRelative{
+    position: relative;
+}
+
+
+.cargarDatosInputCont .md-button.md-primary.md-raised{
+    color: rgb(255,255,255);
+    background-color: rgb(221, 140, 9) !important;
+    border-radius: 0 !important;
+    cursor:pointer !important; 
+    font-size: 11px;
+}
+
+
+.WidthFullVersion{
+    width: 100%;
+}
+
+.cargarDatosInputCont .lf-ng-md-file-input-container .md-raised .lf-ng-md-file-input-tag,
+.cargarDatosInputCont .lf-ng-md-file-input-container .md-raised.lf-ng-md-file-input-button .lf-ng-md-file-input-tag{
+    cursor: pointer !important;
+    padding: 38px;
+}
+
+
+.cargarDatosInputCont .md-button.md-primary.md-raised span,
+.cargarDatosInputCont .md-button.md-primary.md-raised input {
+    cursor:pointer !important; 
+    padding-top: 2px;
+    display: inline-block;
+}
+
+
+.cargarDatosInputCont .md-button.md-primary.md-raised input{
+    cursor:pointer;
+
+}
+
+.cargarDatosInputCont .md-button.md-primary.md-raised:hover{
+    background: #bd7808 !important;
+}
+
+
+.cargarDatosInputCont .md-button.md-primary.md-raised .material-icons{
+    margin: 0 5px;
+}
+
+.butonOpcionDesplegablePrincipal md-fab-trigger{
+    position: relative;
+}
+
+.ContenedorMantenimientoCard .divinormal,
+.ListaMenuAcciones .divinormal{
+    margin: 0px ;
+}
+
+.ContenedorMantenimientoCard .butonpekeAsignado{
+    height: 28px !important;
+    width: 28px !important;
+    max-height: 28px !important;
+    max-width: 28px !important;
+    min-height: 28px !important;
+}
+
+
+.cargarDatosInputCont .md-button.md-primary.md-raised:disabled,
+.cargarDatosInputCont .md-button.md-primary.md-raised:disabled:hover{
+    color: rgb(255,255,255);
+    background-color: #cdcdcd !important;
+    border-radius: 0 !important;
+    cursor:pointer !important; 
+    font-size: 11px;
+        cursor: no-drop  !important;
+}
+.conenedorSubidArchivosDos .lf-ng-md-file-input-button-remove:disabled,
+.cargarDatosInputCont div .lf-ng-md-file-input-button-remove:disabled:hover,
+.conenedorSubidArchivosDos .lf-ng-md-file-input-button-remove:disabled,
+.cargarDatosInputCont div .lf-ng-md-file-input-button-remove:disabled:hover,
+.md-button.md-raised[disabled]{
+      background-color: #cdcdcd !important;
+    cursor:pointer !important; 
+    color:#fff !important;
+        cursor: no-drop  !important;
+            font-size: 11px;
+}
+
+
+
+.cargarDatosInputCont .md-button.md-primary.md-raised:disabled input{
+      cursor: no-drop  !important;
+
+}
+
+.tituloProceso{
+    margin-bottom: -18px;
+    padding-left: 0 !important;
+}
+
+
+/************************************/
+/************ fin elector ***********/
+/************************************/
+
+
+.ErrorInputCargaDocumentObliga{
+    color: #dd2c00;
+    position: absolute;
+    bottom: -11px;
+    width: 100%;
+    font-size: 12px;
+}
+
+
+
+.contenedorSolucionesLoccalOpciones{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px;
+    width: 71px;
+}
+.butonOpcionDesplegablePrincipal .contenedorSolucionesLoccalOpciones{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px;
+    width: 87px;
+}
+/**** MAPA  ****/
+
+
+#chartdiv{
+    height: 53.5vh !important;
+    margin-bottom: 2vh;
+}
+
+
+.chartdiv>.amcharts-main-div>div>svg {
+
+}
+
+.chartdiv>.amcharts-main-div>div>svg>g>g>circle{
+    r: 15.5;
+    cx: 0;
+    cy: 0;
+    fill: rgb(255, 255, 255);
+    stroke: rgb(0, 0, 0);
+    fill-opacity: 0.7;
+    stroke-width: 1;
+    stroke-opacity: 0.1;
+    transform: translate(16, 16);
+}
+
+
+.chartdiv>.amcharts-main-div>div>svg>g>g>g>path {
+    fill-opacity: 1;
+    fill: #2da1a0;
+
+}
+
+
+.chartdiv>.amcharts-main-div>div>svg>g>g>g>path:hover{
+    fill: #1f8887;
+}
+
+.chartdiv>.amcharts-main-div>div>svg>g>g>g>path:active {
+    fill: #ff0000;
+}
+
+.chartdiv>.amcharts-main-div>div>svg>g>g>g>path:link ,
+.chartdiv>.amcharts-main-div>div>svg>g>g>g>path:visited,
+.chartdiv>.amcharts-main-div>div>svg>g>g>g>path[Attributes]{
+
+    fill: #0000ff;
+}
+
+.textAreaTitulo{
+    max-height: 100px;
+    overflow: auto;
+    margin: 6px 0 0 0 !important;
+}
+
+/**** BARRAS ****/  
+
+.chartElectores{
+    background: #fff;
+    box-shadow: 0 0 4px 0px rgba(0, 0, 0, 0.3);
+    height: 24vh !important;
+}
+
+.chartElectores>div>.amcharts-chart-div:before{
+    width: 100%;
+    height: 32px;
+    background: #113654;
+    display: inline-block;
+    position: absolute;
+    content: "";
+    bottom: 0;
+}
+
+
+.chartElectores>div>.amcharts-chart-div:after{
+    height: 100%;
+    width: 36px;
+    background: #113654;
+    display: inline-block;
+    position: absolute;
+    content: "";
+}
+
+
+.chartElectores>div>.amcharts-chart-div{
+    z-index: 41;
+}
+
+.chartElectores .amcharts-balloon-div{
+    z-index: 43;
+
+}
+
+.chartElectores>div>div>svg>g>g>g>g>path{
+    fill: rgb(31, 84, 126);
+    stroke: rgb(31, 84, 126);
+    fill-opacity: 1;
+    stroke-width: 1;
+    stroke-opacity: 1;
+}
+
+
+.chartElectores>div>.amcharts-chart-div>svg{
+    z-index:20;
+}
+
+
+.chartElectores>div>div>svg>g>g>text>tspan{
+    fill: #ffffff;
+}
+
+
+
+.chartElectores>div>div>svg>g>g>g>g>path{
+    fill: rgb(31, 84, 126);
+    stroke: rgb(31, 84, 126);
+    fill-opacity: 1;
+    stroke-width: 1;
+    stroke-opacity: 1;
+}
+
+
+/**** FIN BARRAS ****/
+
+/*
+#chartdiv>svg>g>g>g>path {
+fill: rgb(45, 161, 160);
+}
+
+/**** FIN DE MAPA ****/
+
+
+/**** BARRAS ****/  
+
+.chartElectores{
+    background: #fff;
+    box-shadow: 0 0 4px 0px rgba(0, 0, 0, 0.3);
+    height: 24vh !important;
+}
+
+.chartElectores>div>.amcharts-chart-div:before{
+    width: 100%;
+    height: 32px;
+    background: #113654;
+    display: inline-block;
+    position: absolute;
+    content: "";
+    bottom: 0;
+}
+
+
+.chartElectores>div>.amcharts-chart-div:after{
+    height: 100%;
+    width: 36px;
+    background: #113654;
+    display: inline-block;
+    position: absolute;
+    content: "";
+}
+
+
+.chartElectores>div>.amcharts-chart-div{
+    z-index: 41;
+}
+
+.chartElectores .amcharts-balloon-div{
+    z-index: 43;
+
+}
+
+.chartElectores>div>div>svg>g>g>g>g>path{
+    fill: rgb(31, 84, 126);
+    stroke: rgb(31, 84, 126);
+    fill-opacity: 1;
+    stroke-width: 1;
+    stroke-opacity: 1;
+}
+
+
+.chartElectores>div>.amcharts-chart-div>svg{
+    z-index:20;
+}
+
+
+.chartElectores>div>div>svg>g>g>text>tspan{
+    fill: #ffffff;
+}
+
+
+
+.chartElectores>div>div>svg>g>g>g>g>path{
+    fill: rgb(31, 84, 126);
+    stroke: rgb(31, 84, 126);
+    fill-opacity: 1;
+    stroke-width: 1;
+    stroke-opacity: 1;
+}
+
+
+/**** FIN BARRAS ****/
+
+.cardProcesoElectoral .tituloPincipal {
+    font-size: 19px;
+    display: inline-flex;
+    height: 7vh;
+    align-items: center;
+    text-align: justify;
+
+}
+
+.cardProcesoElectoral .tituloPincipalExtendido {
+    font-size: 17px !important;
+    display: inline-flex;
+    height: 7vh;
+    align-items: center;
+    text-align: justify;
+        word-break: break-word;
+
+}
+
+.cardProcesoElectoral .tituloPincipalExtendidoExtra {
+    font-size: 12px !important;
+    display: inline-flex;
+    height: 7vh;
+    align-items: center;
+    text-align: justify;
+        word-break: break-word;
+
+}
+
+.contenedorRepitAutoridades{
+    width: 300px !important;
+    height: auto;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.contenedorRepitAutoridades strong{
+    width: 100%;
+    display: inline-block;
+}
+
+.butuonDashPrincipal{
+    width: 50%;
+}
+
+.cabeceraTarjetaPrincipal{
+    margin: 0;
+    padding: 0;
+}
+.tarjetaDasboardPrincipal .onpeReporteMapContenido  .onpeReporteMapBarCantidad{
+    padding: 7px 10px !important;
+    margin: 1px;
+    font-size: 25px !important;
+    margin-bottom: -11px;
+}
+.ButonAfterPosition , .ButonNextPosition{
+    position: absolute;
+    top:90%;
+    margin-top: -25px;
+}
+
+.contenidoTexto{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: white;
+    padding: 10px;
+    border-left: 10px #1f547e solid;
+    margin: 8px 0px 2px 0;
+    box-shadow: 0 0 4px 0px rgba(0, 0, 0, 0.41);
+}
+
+
+.tarjetaDasboardPrincipal  .onpeReporteMapContenido .onpeReporteMapSubBlockBold{
+    margin: 3px 4px 3px 0;
+}
+
+.sinpadding{
+    padding: 0;
+}
+
+.sinpadding .cargarDatosInputCont{
+    margin: 0 !important;
+}
+
+.onpeReporteMapContenido {
+
+
+} 
+
+.onpeReporteMapContenido > div{
+
+} 
+.primeraSeccion article {}
+.primeraSeccion{
+    padding-right: 4px !important;
+}
+.terceraSeccion{
+    padding-left: 4px !important;
+    padding-top: 12px;
+}
+
+
+.columnaDiviTres .onpeReporteMapContenido .tituloSecundario{
+    margin-bottom: -1px;
+    z-index: 17;
+    position: relative;
+    box-shadow: 0 0 5px -1px rgba(0, 0, 0, 0.55);
+}
+
+.columnaDiviTres  .onpeReporteMapContenido .onpeReporteMapBarGenero{
+    margin-top: 1px;
+}
+
+.DatosPrimerosElector{
+    margin: 0;
+    padding: 0;
+    /*border:1px solid blue; */
+    margin-top: -7px;
+}
+
+
+.DatosPrimerosElector onpe-adan-estado-carga{
+    display: flex;
+    border:1px solid green;
+}
+
+
+
+.ButonAfterPosition{
+    right: 45%;
+}
+
+.ButonNextPosition{
+    left: 40%;
+}
+
+
+.listaSitemaEstilo{
+    list-style: none;
+}
+
+
+.listaSitemaEstilo li {
+    padding-left: 1em;
+    text-indent: -.7em;
+    margin: 6px 0;
+}
+
+.TextoConBotonContenedorResult{
+    position: relative;
+}
+
+.TextoConBotonContenedorResult .estilosBotonGeneral {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+.listaSitemaEstilo li::before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #009688;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+}
+
+.justificarContenidoFelx{
+    justify-content: space-between;
+
+}
+.footerBotonIngresar .estilosBotonGeneral span{
+    font-size: 14px; 
+}
+
+.postFooter{
+    margin-top: 15px;
+}
+
+
+.contenidoFlex{
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.TarjetaContenedorCarscaled {
+    transform: scale(0.9);
+    margin:  -30px;
+
+}
+
+.cardProcesoElectoral  .onpeReporteMapContenido .tituloSecundario{
+    height: 44px;
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+}
+.cardProcesoElectoral  .onpeReporteMapContenido  md-list-item md-divider{
+    display: none;
+}
+
+.cardProcesoElectoral .tituloSecundario{
+    padding: 0 0 0px 8px;
+}
+
+.cardProcesoElectoral .onpeReporteMapContenido .onpeReporteMapSubBlockData{
+    box-shadow: 0 0 4px 0px rgba(0, 0, 0, 0.3);
+    width: 95%;
+    display: inline-flex;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 8px 0;
+    margin: 0 -12px 0 12px;
+}
+
+.cardProcesoElectoral  .onpeReporteMapContenido  md-list-item md-divider{
+
+}
+
+.altoAutomatico{
+    height: auto !important;
+    min-height: 60vh;
+}
+
+
+
+
+
+@media(min-width: 1500px){ 
+    .ColumnaFull{
+        max-height: 83.8vh; 
+    }
+
+    .contentProcess {
+        height: 83.5vh !important;
+    }
+
+    .cuerpoProyecto {
+        width: 100%;
+        height: 92.5vh;
+    }
+}
+@media(min-width: 1650px){ 
+
+    .onpeReporteMapContenido .onpeReporteMapBarGenero{
+        height: 44px;
+    }
+
+    .chartElectores{           
+        height: 25vh !important;
+    }
+
+    .etiquetasBuscador md-chips-wrap  md-chip , .etiquetaBuscada{
+        font-size: 14px;
+    }
+
+
+    .estilosBotonGeneral.md-fab{
+        width: 56px;
+        height: 56px;
+    }
+
+    .TarjetaContenedorCarscaled {
+        transform: scale(1);
+        margin: 0px;
+    }
+
+
+    .ContenedorMantenimientoCard .EstiloInput{
+        margin: 11px 0;
+    }
+
+    .logoSistemOnpe{
+        width: 120px;
+
+    }
+
+    .TextoConBotonContenedorResult .estilosBotonGeneral {
+        position: absolute;
+        right: 10px;
+        top: 11px;
+    }
+
+
+    .onpeAdanAsignar .onpeAdanAsignarBody{
+
+        height: 435px;
+
+    }
+
+
+
+    .onpeReporteMapContenido .onpeReporteMapBarCantidad , .onpeReporteMapBarCantidad{
+        background: #ffffff;
+        color: #fff;
+        text-align: center;
+        padding: 8px 10px;
+        font-size: 36px;
+        font-weight: bold;
+        margin: 0;
+        color: #403c3c;
+        box-shadow: 0 0 4px 0px rgba(0, 0, 0, 0.3);
+        position: relative;
+        z-index: 16;
+        /*     margin-bottom: 3vh;*/
+    }
+
+    .DatosPrimerosElector{
+        margin-bottom: -3vh;
+    }
+
+
+
+
+    .cardProcesoElectoral .tituloPincipal {
+        font-size: 25px;
+    }
+
+    .cardProcesoElectoral .tituloPincipalExtendido {
+        font-size: 21px !important;
+    }
+
+
+    .cardProcesoElectoral .tituloPincipalExtendidoExtra {
+        font-size: 15px !important;
+
+    }
+
+    .cardProcesoElectoral{
+        height: 640px;
+    }
+
+    .contentProcess {
+        height: 84.5vh !important;
+        align-items: center;
+    }
+
+
+    .cargarDatosInputCont .md-button.md-primary.md-raised{                                                            
+        font-size: 13px;
+    }
+
+    .TablaEstiloSis > tbody > tr > td > span{
+        font-size: 16px;
+    }
+
+    .TablaEstiloSis > thead > tr> th{
+        padding: 9px 10px;
+        font-size: 16px;
+    }
+
+    .ContenedorMantenimientoCard{
+        font-size: 16px;
+        height: 567px; 
+
+    }
+    .onpeReporteMapContenido .onpeReporteMapSubBlockBoldTag{
+            width: 89%;
+        font-size: 13px;
+    }
+
+
+    .onpeReporteMapContenido .onpeReporteMapSubBlockBtn span{
+        font-size: 15px;
+    }
+    .contenidoOpcionaAciones .md-padding{
+        height: 50vh;
+    }
+
+
+    .contenidoOpcionaAciones .tituloTerciario{
+        font-size: 22px;
+    }
+
+    .cuerpoProyecto {
+        width: 100%;
+        height: 93.6vh;
+    }
+
+    .inputmedio{
+        width: 49.4%;
+    }
+
+    .radioBuscador md-radio-button{
+        font-size: 16px;
+    }
+
+    .columnaDiviTres , .ColumnaFull {
+        max-height: 85.8vh;
+
+    }
+
+    .estilosBotonGeneral.md-fab{
+        width: 56px;
+        height: 56px;
+    }
+
+    .table-responsive{
+        max-height: 55.3vh;
+
+    }
+
+    .tipoSolucionAgregada  .onpeReporteMapBarCantidad{
+        width: 46%;
+        color: #403c3c;
+    }
+
+
+    .SistemaComentatext{
+        font-size: 16px;
+        margin: 10px 0;
+    }
+
+
+    .radioJuntos .md-label{
+        font-size: 14px;
+    }
+
+    .tituloCuarto{
+        font-size: 16px;
+    }
+
+    .tituloSecundario{
+        font-size: 18px;
+    }
+
+
+    .tituloTerciario{
+        font-size: 20px;
+    }
+
+
+    .tituloPincipal{
+        font-size: 28px;
+    }
+
+    .estilosBotonGeneral span {
+        line-height: 1;
+        margin: 6px;
+        font-size: 12px;
+    }
+
+    .TablaEstiloSis{
+
+        font-size: 15px;
+    }
+
+    .datosSecundariosElector{
+        font-size: 16px;
+    }
+
+    .datosElectir{
+        font-size: 18px;
+    }
+
+    .datosSecundariosElector strong {
+        font-size: 36px;
+        line-height: 42px;
+    }
+    #chartdiv{
+
+        height: 65vh !important;
+    }
+
+
+    .footerBotonIngresar .estilosBotonGeneral span{
+        font-size: 22px; 
+    }
+
+    .onpeReporteMapContenido .onpeReporteMapSubBlockData{
+        font-size: 20px;
+    }
+
+    .imagenompletaTotal{
+        width: 84%;
+    }
+
+}
+
+
+@media screen and  (max-width: 1370px)  {
+    .columnaDiviTres:nth-child(odd) , .columnaDiviTres:nth-child(even){
+        width: 33.3%;
+    }
+    .imagenompletaTotal {
+        width: 100%;
+       /* height: 440px;*/
+    }
+    .contDatosSolucionLocalReasigPrincipal{
+        width: 92px;
+    }
+
+    .columnaDiviTres{
+        padding: 8px;
+    }
+}
+
+@media screen and  (max-width: 1300px)  {
+
+
+    .contenidoOpcionaAciones .md-padding{
+        height: auto;
+    }
+
+    .cardProcesoElectoral{
+        -ms-transform: scale(1); /* IE 9 */
+        -webkit-transform: scale(1); /* Safari */
+        transform: scale(1);
+    }
+
+
+    .etiquetasBuscador md-chips-wrap  md-chip ,  .etiquetaBuscada{
+
+        width: auto;
+
+    }
+    .botoposidere{
+        position: relative;
+    }
+
+    .ColumnaFull{
+        max-height: none; 
+    }
+
+    .contenidoEstandar > div > div > div > form, 
+    .contenidoEstandar > div > div > div > .contdmoree{
+        border-bottom: 1px solid #dcdcdc;
+    }
+
+
+
+    .contenidoEstandar > div,
+    .contenidoEstandar > div > div, 
+    .contenidoEstandar > div > div > div,
+    .contenidoEstandar > div > div > div > form, 
+    .contenidoEstandar > div > div > div > .contdmoree{
+        width: 100%;
+        height: auto;
+    }
+
+
+    .contenidoEstandar{
+
+        height: auto;
+        display: inline;
+        overflow: auto;
+    }
+
+
+    .postSeparador{
+        padding: 0;
+    }
+    .cabeceraGeneral{
+        height: auto;
+    }
+
+    .columnaDiviTres{
+        display: block !important;
+        height: auto;
+        max-height: none;
+        overflow: auto;
+        width: auto;
+        min-width: 100%;
+
+        justify-content: normal !important;
+        flex-direction: inherit !important;
+    }
+
+    .cuerpoProyecto{
+        height: auto;
+    }
+
+
+    .ParteDividiaPreferencial{
+        width: 100%;
+    }
+
+
+
+    .divivertical {
+        height: 1px;
+        width: 100%;
+        background: #b8cecd;
+        margin: 10px auto;
+    }
+
+    .diviverticalPeque{
+        height: 1px;
+        width: 100% !important;
+        background: #b8cecd;
+        margin: 10px auto;
+    }
+
+    .alineadoRadio  md-radio-group{
+        width: 100%;
+    }
+    .chartElectores{      
+        height: 210px !important;
+    }
+
+    .columnaDiviTres:nth-child(odd), .columnaDiviTres:nth-child(even){
+        padding: 0;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+}
+
+@media screen and  (max-width: 1200px){
+
+    .estiloTarjetaCabecera  .alineadoDerecha md-checkbox ,
+    .EstadoActivo .seccionEstado md-radio-group md-radio-button{
+        -ms-transform: scale(0.9); /* IE 9 */
+        -webkit-transform: scale(0.9); /* Safari */
+        transform: scale(0.9);
+        margin: -2px;
+    }
+
+    .TarjetaContenedorCarscaled{
+        margin: -52px;
+        transform: scale(0.85);
+        display: inline-flex;
+        justify-content: center;
+    }
+
+
+    .contenidoEstandar > div,
+    .contenidoEstandar > div > div,
+    .contenidoEstandar > div > div > div,
+    .contenidoEstandar > div > div > div > form,
+    .contenidoEstandar > div > div > div > .contdmoree{
+        display: block;
+    }
+
+}
+
+@media screen and  (max-width: 990px)  , screen and  (max-height:569px){
+
+    .heightUsuario{
+        height: auto !important;
+}
+    
+    .contenidoEstandar > div,
+    .contenidoEstandar > div > div, 
+    .contenidoEstandar > div > div > div,
+    .contenidoEstandar > div > div > div > form, 
+    .contenidoEstandar > div > div > div > .contdmoree{
+        width: 100%;
+        display: inline-block;
+        height: auto;
+    }
+
+
+    .columnaDiviTres:nth-child(odd), .columnaDiviTres:nth-child(even) {
+        width: 100%;
+        height: auto;
+        max-height: none;
+
+
+    }
+
+    .cardProcesoElectoral{
+        -ms-transform: scale(1); /* IE 9 */
+        -webkit-transform: scale(1); /* Safari */
+        transform: scale(1);
+    }
+
+
+    .cardProcesoElectoral  .butuonDashPrincipal{
+        width: 100%;
+        margin: 8px 0 !important;
+    }
+
+    .cardProcesoElectoral .tituloPincipalExtendido {
+        height: auto;
+        margin: 11px 0;
+    }
+
+    .cardProcesoElectoral .tituloPincipalExtendidoExtra {
+        height: auto;
+        margin: 11px 0;
+    }
+
+    .ContenedorMantenimientoCard {
+        height: auto;
+    }
+
+    .cargarDatosInputCont{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .colum2Card{
+        width: 100%;
+    }
+
+    .contenidoEstandar > div > div > div > form, .contenidoEstandar > div > div > div > .contdmoree{
+        display: block;
+    }
+
+    .inputmedio{
+        width: 100%;
+    }
+    .cuerpoProyecto{
+        display: block;
+    }
+
+    .contenidoEstandar{
+        width: 100%;
+        display: inline-block;
+        height: auto;
+
+    }
+
+    .TarjetaContenedorCarscaled{
+        margin: 0;
+        transform: scale(1);
+        display: block;
+    }
+
+    .estiloTarjetaCabecera  .colum2{
+        width: 100%;
+    }
+
+    .cardProcesoElectoral{
+        width: 100%;
+        height: auto;
+        margin: 5px 0;
+        min-width: initial;
+        display: block;
+        max-width: initial;
+        -ms-transform: scale(1); /* IE 9 */
+        -webkit-transform: scale(1); /* Safari */
+        transform: scale(1);
+    }
+
+    .contentProcess{
+        display: block;
+        height: auto !important;
+
+    }
+
+    .estilosBotonGeneral{
+        font-size: 14px;
+        height: 36px;
+        min-height: 36px;
+    }
+
+
+    .contenedorAutoridadesElegir  .estilosBotonGeneral.md-fab{
+        min-width: 37px !important;
+        max-width: 37pz !important;
+        min-height: 37px !important;
+        max-height: 37x !important;
+    }
+
+
+    .ButonAfterPosition , .ButonNextPosition{
+        display: none;
+    }
+
+    .ColumnaFull{
+        max-height: none;
+    }
+
+    .ParteDividiaPreferencialPer{
+        width: 49%;
+    }
+    .ButonPrincipal{
+        height: auto;
+    }
+
+}
+
+
+@media(max-width: 670px){
+
+    .contenidoEstandar{
+        width: 100%;
+    }
+
+}
+
+
+
+@-moz-document url-prefix() {   
+
+    .ColumnaFull{
+        max-height: 80.9vh;
+    }
+
+    .columnaDiviTres:nth-child(2n+1){
+        width: 29.5%;   
+    }
+
+    .columnaDiviTres:nth-child(2n+1), .columnaDiviTres:nth-child(2n) {
+        width: 32.9%;
+    }
+    
+    .imagenompletaTotal{
+        width: 100%;
+height: 100%;
+
+    }
+
+
+    @media(min-width: 1500px){ 
+
+        .cuerpoProyecto{
+            height: 92.9vh;
+        }
+
+        .columnaDiviTres, .ColumnaFull{
+            height: 85vh;
+        }
+
+    }
+
+    @media(min-width: 1650px){ 
+
+        .columnaDiviTres, .ColumnaFull{
+            height: 85vh;
+        }
+
+
+        .columnaDiviTres:nth-child(2n+1), .columnaDiviTres:nth-child(2n) {
+            width: 32.9%;
+        }
+
+    }
+
+    @media screen and  (max-width: 990px)  , screen and  (max-height:569px){
+        .ColumnaFull {
+            max-height: none;
+        }
+
+    }
+
+
+
+}
+
+

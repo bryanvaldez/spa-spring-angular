@@ -1,0 +1,352 @@
+
+
+.amcharts-main-div .amcharts-chart-div a, #chartdiv .amcharts-chart-div a {
+    display: none !important;
+}
+.onpeReporteMapContenido{
+    margin-top: 5px;
+}
+.onpeReporteMapContenido .onpeReporteMapContenidoTitle{
+ border-left: 9px solid #2da1a0;
+    width: 100%;
+    text-align: left;
+    padding: 8px;
+    margin: 7px 0 1.3vh 0;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 15px;
+    background: #fff;
+    font-weight: 700;
+}
+
+.onpeReporteMapContenido .onpeReporteMapContenidoSubTitle{
+    color: #28557f;
+    font-size: 18px;
+    text-align: center;
+}
+/*
+.onpeReporteMapContenido .onpeReporteMapBarGenero{
+    width: 100%;
+    background: #112c42; 
+    height: auto;
+    overflow: hidden;
+    height: 35px;
+    position: relative;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.32);
+    
+}
+
+.onpeReporteMapContenido .onpeReporteMapBarGenero .onpeReporteMapBarLeft{
+   background-image: url(../../img/texturaBarraCarga3.png) !important;
+    position: absolute;
+    left: 0;
+    top: 0;    
+}
+.onpeReporteMapContenido .onpeReporteMapBarGenero .onpeReporteMapBarRight{
+   background-image: url(../../img/texturaBarraCarga2.png) !important;
+    position: absolute;
+    right: 0;
+    top: 0;   
+}
+
+.onpeReporteMapContenido .onpeReporteMapBarGenero .onpeReporteMapBarLeft:before {
+       content: "";
+       background-image: url(../../img/texturaBarraCarga3.png) !important;
+       width: 100%;
+       height: 100%;
+        z-index: 1
+}
+.onpeReporteMapContenido .onpeReporteMapBarGenero .onpeReporteMapBarRight:before{
+        content: "";
+       background-image: url(../../img/texturaBarraCarga2.png) !important;
+       width: 100%;
+       height: 100%;
+       z-index: 1
+       
+}*/
+
+.onpeReporteMapContenido .onpeReporteMapBarGenero .onpeReporteMapBarLeft:before ,
+.onpeReporteMapContenido .onpeReporteMapBarGenero .onpeReporteMapBarRight:before{
+
+    position: absolute;
+      animation-duration:1.5s;
+      -moz-animation-duration: 1.5s;
+      -ms-animation-duration: 1.5s;
+      -o-animation-duration: 1.5s;
+      -ms-animation-duration: 1.5s;
+      animation-name: CargadorBarra;
+      -moz-animation-name: CargadorBarra;
+      -o-animation-name: CargadorBarra;
+      -ms-animation-name: CargadorBarra;
+      -webkit-animation-name: CargadorBarra;
+      animation-iteration-count: infinite;
+      -mos-animation-iteration-count: infinite;
+      -ms-animation-iteration-count: infinite;
+      -o-animation-iteration-count: infinite;
+      -webkit-animation-iteration-count: infinite;
+      animation-direction: normal;
+      -moz-animation-direction: normal;
+      -webkit-animation-direction: normal;
+      -ms-animation-direction: normal;
+      -o-animation-direction: normal;
+      animation-timing-function: linear;
+      -o-animation-timing-function: linear;
+      -moz-animation-timing-function: linear;
+      -webkit-animation-timing-function: linear;
+      -ms-animation-timing-function: linear;
+      
+      
+    }
+
+    @keyframes CargadorBarra {
+      from {
+      
+   
+      }
+
+      to {
+    background-position: 80px;
+      }
+    }
+
+
+.onpeReporteMapContenido .onpeReporteMapBarLocales{
+    width: 100%;
+    background: #901e10;
+    height: auto;
+    overflow: hidden;
+    height: 40px;
+    position: relative;
+    margin-top: 7px;
+}
+
+.onpeReporteMapContenido .onpeReporteMapBarLocales .onpeReporteMapBarLeft{
+    position: relative;
+}
+
+.onpeReporteMapContenido .onpeReporteMapBarLocales .onpeReporteMapBarLeft:before{
+    content: "";
+   background-image: url(../../img/texturaBarraCarga1.png) !important;
+   width: 100%;
+   height: 100%;
+    position: absolute;
+          animation-duration:1.5s;
+      -moz-animation-duration: 1.5s;
+      -ms-animation-duration: 1.5s;
+      -o-animation-duration: 1.5s;
+      -ms-animation-duration: 1.5s;
+          animation-name: CargadorBarra;
+      -moz-animation-name: CargadorBarra;
+      -o-animation-name: CargadorBarra;
+      -ms-animation-name: CargadorBarra;
+      -webkit-animation-name: CargadorBarra;
+      animation-iteration-count: infinite;
+      -mos-animation-iteration-count: infinite;
+      -ms-animation-iteration-count: infinite;
+      -o-animation-iteration-count: infinite;
+      -webkit-animation-iteration-count: infinite;
+      animation-direction: normal;
+      -moz-animation-direction: normal;
+      -webkit-animation-direction: normal;
+      -ms-animation-direction: normal;
+      -o-animation-direction: normal;
+      animation-timing-function: linear;
+      -o-animation-timing-function: linear;
+      -moz-animation-timing-function: linear;
+      -webkit-animation-timing-function: linear;
+      -ms-animation-timing-function: linear;
+    left: 0;
+    top: 0;    
+   box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.54);
+   z-index: 1;
+}
+
+.onpeReporteMapBarLeft span, .onpeReporteMapBarRight span, onpeReporteMapBarLocales span {
+    display: block;
+    text-align: center;
+    margin: 10px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 13px;
+    z-index: 10;
+}
+.onpeReporteMapBarLeft, .onpeReporteMapBarRight{
+    display: inline-flex;
+    -moz-display: inline-flex;
+    -webkit-display: inline-flex;
+    -o-display: inline-flex;
+    -ms-display: inline-flex;
+    align-items: center;
+    -moz-align-items: center;
+    -o-align-items: center;
+    -ms-align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+    animation-name: barAnimation;
+    -moz-animation-name: barAnimation;
+    -webkit-animation-name: barAnimation;
+    -ms-animation-name: barAnimation;
+    -o-animation-name: barAnimation;
+    animation-duration: 0.8s;
+    -moz-animation-duration: 0.8s;
+    -webkit-animation-duration: 0.8s;
+    -ms-animation-duration: 0.8s;
+    -o-animation-duration: 0.8s;
+    overflow: hidden;
+    height: 35px;
+    vertical-align: top;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.54);
+}
+.option-off span{
+    color: transparent;
+}
+.onpeReporteMapBarLeft span ,.onpeReporteMapBarRight span {
+    animation-name: barAnimationSpan;
+    -moz-animation-name: barAnimationSpan;
+    -webkit-animation-name: barAnimationSpan;
+    -ms-animation-name: barAnimationSpan;
+    -o-animation-name: barAnimationSpan;
+    animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -webkit-animation-duration:1s;
+    -ms-animation-duration:1s;
+    -o-animation-duration:1s;
+    overflow: hidden;
+    max-height: 30px;
+    vertical-align: top;
+}
+.onpeReporteMapContenido .onpeReporteMapBlockMedio {
+    width: 50%;
+    vertical-align: top;
+    display: inline-block;
+    margin: 0px -1.5px;
+    font-size: 25px;
+    color: #28557f;
+    
+}
+.onpeContentRight{
+    text-align: right; 
+}
+.onpeContentLeft{
+    text-align: left; 
+}
+
+.onpeReporteMapContenido .onpeReporteMapBarPorcentaje{
+    position: relative;
+    height: 40px;
+    background: #848690;
+    overflow: hidden;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-top: 7px;    
+}
+.onpeReporteMapContenido .onpeReporteMapBarPorcentaje p {
+    position: absolute;
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+    z-index: 2;
+    left: 25px;
+    top: 12px;
+}
+.onpeReporteMapContenido .onpeReporteMapBarPorcentaje div{
+    position: relative;
+    background: #EF6C00;
+    height: 100%;
+    -webkit-transition:0.8s; 
+    transition: 0.8s;
+    animation-name: baccaCarga;
+    -moz-animation-name: baccaCarga;
+    -webkit-animation-name: baccaCarga;
+    -ms-animation-name: baccaCarga;
+    -o-animation-name: baccaCarga;
+    animation-duration: 1.2s;
+    -moz-animation-duration: 1.2s;
+    -webkit-animation-duration:1.2 s;
+    -ms-animation-duration: 1.2s;
+    -o-animation-duration: 1.2s;
+}
+
+/*
+.onpeReporteMapContenido .onpeReporteMapBlockTag {
+    font-size: 15px;
+    text-align: left;
+    padding: 0;
+    color: #28557f;
+}
+*/
+.onpeReporteMapContenido .onpeReporteMapSubBlock {
+    font-size: 13px;
+    text-align: left;
+    background: #fff;
+    border-left: 8px #2da1a0 solid;
+}
+
+.onpeReporteMapContenido .onpeReporteMapSubBlockTag{
+    font-size: 15px;
+    color: #28557f;
+    text-align: left;    
+}
+
+
+
+.onpeReporteMapContenido .onpeReporteMapSubBlockIcon{
+    width: 50%;
+    vertical-align: top;
+    display: inline-block;
+    margin: 0px -1.5px;
+    font-size: 20px;
+    text-align: right;
+    color: #c6911a;
+}
+.onpeReporteMapSubBlockIconImg{
+    font-size: 25px;
+    width: 40px;
+    height: 40px;    
+}
+
+
+.onpeReporteMapContenido .onpeReporteMapSubBlockBtn{
+    background: #dd8c09 !important;
+    color: #fff;
+    width: 40%;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+}
+.onpeReporteMapContenido .onpeReporteMapSubBlockBtn:hover{
+    background: #dd8c09 !important;
+    color: #fff;
+    width: 40%;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+
+
+@keyframes barAnimation {
+    0%   {
+    width: 0%;
+    }
+    100% {
+
+    }
+}
+@keyframes barAnimationSpan {
+    0%   {
+    opacity: 0;
+    font-size: 1px;
+    }
+
+    40%   {
+    opacity: 0;
+    font-size: 1px;
+    }
+    100% {
+
+    }
+}

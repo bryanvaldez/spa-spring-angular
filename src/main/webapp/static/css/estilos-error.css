@@ -1,0 +1,276 @@
+    /*********************************************************/
+
+    /******************* Area: Gite; *************************/
+    /****** Autor del codigo css = Edgardo M Paresdes M ******/
+    /*********************************************************/
+body, html{
+
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    sizing: border-box;
+}
+
+.canvas-element{
+  width: 100% !important;
+  height: 100% !important;
+}
+
+canvas {
+    display: inline-block;
+}
+
+.animacion{
+    width: 100%;
+    /* max-width: 163vh; */
+    position: absolute;
+    bottom: -15%;
+    left: 0;
+    margin-left: 0;
+        z-index: -1;
+        
+    min-width: 950px;
+
+}
+
+header{
+    background: #001b3f;
+    height: 61px;
+    width: 100%;
+    text-align: left;
+    padding: 0 20px;
+}
+header h2{
+    display: inline-block;
+    text-align: left;
+    color: #fff;
+    font-family:8 arial;
+}
+
+body{
+    background-color: #0b2d46;
+    background-image: url(../img/texturaElement.png);
+    overflow: hidden;
+    animation-name: animaTarjetaFull;
+    -moz-animation-name: animaTarjetaFull;
+    -webkit-animation-name: animaTarjetaFull;
+    -ms-animation-name: animaTarjetaFull;
+    -o-animation-name: animaTarjetaFull;
+    animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    -ms-animation-duration: 2s;
+    -o-animation-duration: 2s;
+
+    padding: 2vh;
+    width: 100%;
+}
+
+
+@keyframes animaTarjetaFull {
+    0%   {
+        background-color:  #1f547e;
+
+    }
+
+
+    100% {
+
+    }
+}
+
+.logo-onpe{
+    margin-top: 7vh;
+    width: 109px;
+      -moz-animation-duration: 0.7s;
+  -webkit-animation-duration: 0.7s;
+  animation-duration: 0.7s;
+  -moz-animation-name: LogoOnpe;
+  -webkit-animation-name: LogoOnpe;
+  animation-name: LogoOnpe;
+      -webkit-transition: 0.8s; /* Safari */
+    transition: 0.8s;
+
+}
+
+@keyframes LogoOnpe {
+  from {
+    opacity: 0;
+    margin-top: -15px;
+  }
+
+  to {
+
+  }
+}
+
+
+
+.logo-osl-cont{
+    /* position: absolute; */
+    /* min-width: 300px; */
+    width: 100%;
+    max-width: 410px;
+    padding: 10px;
+    /* top: 23%; */
+    /* left: 14%; */
+    -moz-animation-duration: 0.7s;
+    -webkit-animation-duration: 0.7s;
+    animation-duration: 0.7s;
+    -moz-animation-name: LogoOsl;
+    -webkit-animation-name: LogoOsl;
+    animation-name: LogoOsl;
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+    margin: 0 auto;
+
+}
+
+@keyframes LogoOsl {
+  from {
+
+    opacity: 0;
+  }
+
+  to {
+|   
+  }
+}
+
+.logo-osl-cont img{
+    width: 200px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+.logo-osl-cont .conte{
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    margin: 20px 0px 10px 0px;
+    text-align: center;
+    background: white;
+    border-left: 13px solid #009688;
+    color: #444444;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+
+
+.logo-osl-cont .conte h2{
+    display: inline-block;
+    vertical-align: top;
+    font-family: arial;
+    font-size: 24px;
+    color: #484848;
+    text-align: center;
+    font-weight: 700;
+    margin:0px;
+    width: 100%;
+    line-height: 1;
+
+}
+
+
+.logo-osl-cont .conte h1{
+    display: inline-block;
+    vertical-align: top;
+    font-family: arial;
+    font-size: 54px;
+    color: #484848;
+    font-weight: 700;
+    width: 100%;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    text-align: center
+}
+
+.logo-osl-cont  .conte span{
+    font-family: arial;
+    font-size: 18px;
+    color: #777;
+        font-weight: 100;
+}
+
+.conte a {
+    padding: 5px;
+    background: #dd8c09;
+    display: block;
+    width: 107px;
+    font-family: arial;
+    text-decoration: none;
+    color: #fff;
+    margin: 9px auto;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.18);
+
+}
+
+@media  (min-width: 1600px) {
+    /*********************************************************/
+
+    /******************* Area: Gite; *************************/
+    /****** Autor del codigo css = Edgardo M Paresdes M ******/
+    /*********************************************************/
+.logo-osl-cont{
+   -ms-transform: scale(1.4); /* IE 9 */
+    -webkit-transform: scale(1.4); /* Safari */
+    transform: scale(1.4);
+    margin-top: 6vh;
+}
+}
+
+
+@media  (max-width: 950px) {
+    /*********************************************************/
+
+    /******************* Area: Gite; *************************/
+    /****** Autor del codigo css = Edgardo M Paresdes M ******/
+    /*********************************************************/
+.logo-osl-cont{
+    /* position: relative; */
+    text-align: center;
+    left: 0;
+    margin: 3vh 0 0 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+.logo-osl-cont .conte{
+    text-align: center;
+
+    padding: 10px;
+}
+
+.logo-onpe {
+    position: relative;
+    right: 0;
+    top: 24px;
+    width: 109px;
+    position: relative;
+}
+.logo-osl-cont .conte , .logo-osl-cont .conte h1 , .logo-osl-cont .conte h2 , .logo-osl-cont .conte span{
+    width: 100%;
+    text-align: center;
+}
+.animacion {
+bottom: -11%;
+}
+
+}
+
+@media  (max-height: 550px) {
+.animacion {
+bottom: -25%;
+opacity: 0.5
+}
+}

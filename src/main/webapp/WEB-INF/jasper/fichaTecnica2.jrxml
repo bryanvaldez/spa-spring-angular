@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="fichaTecnica2" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isFloatColumnFooter="true" uuid="c8abf71b-d35e-4c84-a11b-02d7521f7847">
+	<property name="ireport.zoom" value="1.7715610000000017"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="TITULO" class="java.lang.String"/>
+	<parameter name="tipoEleccion" class="java.lang.String"/>
+	<parameter name="periodicidad" class="java.lang.String"/>
+	<parameter name="ambito" class="java.lang.String"/>
+	<parameter name="fechaEleccion" class="java.util.Date"/>
+	<parameter name="distritos" class="java.lang.String"/>
+	<parameter name="variable" class="java.lang.String"/>
+	<parameter name="odpe" class="java.lang.String"/>
+	<parameter name="electoresHabiles" class="java.lang.String"/>
+	<parameter name="mesasSufragio" class="java.lang.String"/>
+	<parameter name="localesVotacion" class="java.lang.String"/>
+	<parameter name="fechaActualizacion" class="java.util.Date"/>
+	<parameter name="tecnologiaEleccion" class="java.lang.String"/>
+	<parameter name="criterio" class="java.lang.String"/>
+	<parameter name="municipalidades" class="java.lang.String"/>
+	<parameter name="LOGO_ONPE" class="java.io.InputStream"/>
+	<field name="nombre" class="java.lang.String"/>
+	<field name="descripcion" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="62" splitType="Stretch">
+			<textField>
+				<reportElement uuid="d65bc876-7c9b-48c8-81b1-036176107fb0" x="107" y="2" width="352" height="58"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled"/>
+				<textFieldExpression><![CDATA['<style isBold="true" size="11">' + $P{TITULO} + '</style> ']]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement uuid="5950513c-0cd7-42b8-ad98-6535969e4209" x="5" y="7" width="100" height="50"/>
+				<imageExpression><![CDATA[$P{LOGO_ONPE}]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="99" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="9b4cd53e-baa1-4a47-a765-ba16fa4f7e03" x="36" y="22" width="248" height="76" backcolor="#D5DCE4"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="9d7a62c6-9d95-4898-9560-3e03d96f54db" mode="Transparent" x="36" y="41" width="482" height="19"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="29b0b402-f7a1-4b4a-8838-dc8f3e543fb4" mode="Transparent" x="36" y="22" width="482" height="19"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="ad82683a-4f73-4996-922f-50b0c5fe5d6a" mode="Transparent" x="36" y="60" width="482" height="19"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="278df3fd-07c8-45c3-8fd3-8e6bc6928249" mode="Transparent" x="41" y="23" width="231" height="17" backcolor="#D5DCE4"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Tipo de Elección]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c99cf042-8b9c-43a8-abef-2af2ef96fb32" mode="Transparent" x="41" y="42" width="231" height="17" backcolor="#D5DCE4"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Periodicidad]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="aa66af73-17b9-410e-96f3-7d02b410c628" x="41" y="60" width="231" height="18"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Total de distritos participantes]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="57ba07a0-2c4a-4436-bfaf-f6eb243cb39c" x="286" y="23" width="231" height="18"/>
+				<textElement verticalAlignment="Middle">
+					<paragraph leftIndent="4"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{tipoEleccion}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="0c82cca5-7231-44d0-b62b-4543b90fb2c5" x="286" y="42" width="231" height="18"/>
+				<textElement verticalAlignment="Middle">
+					<paragraph leftIndent="4"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{periodicidad}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="c7c339e3-9532-4872-9a68-7da8af7076df" x="286" y="61" width="231" height="18"/>
+				<textElement verticalAlignment="Middle">
+					<paragraph leftIndent="4"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{distritos}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement uuid="1719ca55-c240-421a-91d6-636de83ea99e" mode="Transparent" x="36" y="79" width="482" height="19"/>
+			</rectangle>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="dfc19ed9-7c88-4f7a-aee7-2e4255608157" x="286" y="80" width="231" height="18"/>
+				<textElement verticalAlignment="Middle">
+					<paragraph leftIndent="4"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{municipalidades}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="74e52f82-7230-41ad-b4d5-ac5b7da0fc05" x="41" y="80" width="231" height="18"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Municipalidades]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="19">
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="73298831-8d33-4530-aa16-82ae0208d7a8" x="284" y="0" width="234" height="19"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<paragraph leftIndent="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{descripcion}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="f56f4cba-d79b-4988-9823-9557984b76f8" mode="Opaque" x="36" y="0" width="248" height="19" backcolor="#D5DCE4"/>
+				<box>
+					<leftPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font isUnderline="false" isStrikeThrough="false"/>
+					<paragraph leftIndent="4"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nombre}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="145" splitType="Prevent">
+			<rectangle>
+				<reportElement uuid="53ab838f-e889-4dd5-bae2-ba8cba0754a4" x="36" y="0" width="248" height="108" backcolor="#D5DCE4"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="b5286b58-6f85-47a5-bfc0-22ad006bc662" mode="Transparent" x="36" y="0" width="482" height="18"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="91cc64c5-9272-4a52-8975-f7c2ce212284" mode="Transparent" x="36" y="36" width="482" height="18"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="cca158fa-d4fb-4f84-ad3e-5f76e1aea03e" mode="Transparent" x="36" y="18" width="482" height="18"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="c521e33f-fa87-4e6d-9f66-68484f424cc5" mode="Transparent" x="36" y="54" width="482" height="18"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="d6f32c7d-ec3b-4388-b648-ab3df4ea2060" mode="Transparent" x="36" y="72" width="482" height="18"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="65fa41f4-74ff-4120-b68d-c5d46b70dccf" mode="Transparent" x="36" y="90" width="482" height="18"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="375a5468-3b38-4dc5-82db-24f2e696a822" x="41" y="0" width="231" height="18"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Fecha de la Elección]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="e4f27037-6579-4c6f-91f3-966e5f39217a" x="41" y="18" width="231" height="18"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Variable]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="37a8c67e-422d-4715-be65-3b3b938b1944" x="41" y="36" width="231" height="18"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[ODPE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="ea2eefbe-0442-448f-a603-0d328577c949" x="41" y="54" width="231" height="18"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Electores Hábiles]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="89fd3d2d-83dd-47a2-b1c0-7b22786ae21a" x="41" y="72" width="231" height="18"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Mesas de Sufragio]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="ca7603d6-b275-411a-af9a-e0812995d626" x="41" y="90" width="231" height="18"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Locales de Votación]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="1c47a16e-7397-46fe-8f2e-e18313b3e980" x="286" y="0" width="47" height="18"/>
+				<textElement verticalAlignment="Middle">
+					<paragraph leftIndent="4"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{fechaEleccion}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="b737a951-f022-4908-abb2-15537a44594d" x="286" y="18" width="231" height="18"/>
+				<textElement verticalAlignment="Middle">
+					<paragraph leftIndent="4"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{variable}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="bd00e632-0b0b-4082-b055-0d0bbb6820a1" x="286" y="36" width="231" height="18"/>
+				<textElement verticalAlignment="Middle">
+					<paragraph leftIndent="4"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{odpe}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="309d8c73-9129-4a05-9a65-15dc9e6e889e" x="286" y="54" width="231" height="18"/>
+				<textElement verticalAlignment="Middle">
+					<paragraph leftIndent="4"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{electoresHabiles}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="6cac178e-0bca-4ffc-afad-ffb6a1f8fb13" x="286" y="72" width="231" height="18"/>
+				<textElement verticalAlignment="Middle">
+					<paragraph leftIndent="4"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{mesasSufragio}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="2244be32-5b19-4e28-94ac-ea0736d1b29a" x="286" y="90" width="231" height="18"/>
+				<textElement verticalAlignment="Middle">
+					<paragraph leftIndent="4"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{localesVotacion}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="0d6882f2-00a6-4a36-91e0-b6da77061155" x="36" y="116" width="66" height="18"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Actualizado al]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="f59bfdf9-6024-4ceb-91d1-857ce952a0c1" x="102" y="116" width="47" height="18"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{fechaActualizacion}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,455 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 08/11/2016, 09:05:12 AM
+    Author     : Bryan Valdez <bvaldez at onpe.gob.pe>
+*/
+.footer-login{
+    width: 100%; 
+    height: 10px; 
+    background-color: #015780;
+    position: fixed; 
+    bottom: 0;
+}
+
+.desactivado{
+    background-color: #015780; 
+    color: #fff;
+}
+.activado{
+    background-color: #12a537;
+    color: #fff;
+}
+
+.hint-input {
+    /* Position the hint */
+    position: absolute;
+    left: 40px;
+    right: auto;
+    bottom: -15px;
+    /* Copy styles from ng-messages */
+    font-size: 12px;
+    line-height: 14px;
+    transition: all 0.3s cubic-bezier(0.55, 0, 0.55, 0.2);
+    /* Set our own color */
+    color: grey; }
+
+.low {
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+body,html,.body{
+    height: 100%;
+    font-family: sans-serif;
+    background-color: #fff;
+    overflow: auto;
+}
+
+.cabeceraReal{
+
+    height: 25vh;
+    min-height: 150px;
+
+}
+
+.cabeceraReal:before{
+    content: "";
+    display: block;
+    background: #015780;
+    height: 25vh;
+    min-height: 150px;
+}   
+
+.cabeceraAnimada{
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    height: 25vh;
+    min-height: 150px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.38);
+    background: #015780; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, #0b2d46 1%, #015780 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, #0b2d46  1%,#015780 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, #0b2d46 1%,#015780 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b2d46', endColorstr='#015780',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.PersonajeAnimado{
+    width: 0px;
+    animation-name: PersonaAnimado;
+    -moz-animation-name: PersonaAnimado;
+    -webkit-animation-name: PersonaAnimado;
+    -ms-animation-name: PersonaAnimado;
+    -o-animation-name: PersonaAnimado;
+    animation-duration: 2.4s;
+    -moz-animation-duration: 2.4s;
+    -webkit-animation-duration: 2.4s;
+    -ms-animation-duration: 2.4s;
+    -o-animation-duration: 2.4s;
+    overflow: auto;
+    opacity: 0;
+}
+
+
+@keyframes PersonaAnimado {
+    0%   {
+        width: 150px;
+        opacity: 1;
+
+    }
+
+    75%   {
+        width: 150px;
+        opacity: 1;
+    }
+
+    100% {
+
+    }
+}
+
+.AnimaciondeCabecera{
+    animation-name: loginCabe;
+    -moz-animation-name: loginCabe;
+    -webkit-animation-name: loginCabe;
+    -ms-animation-name: loginCabe;
+    -o-animation-name: loginCabe;
+    animation-duration: 3.5s;
+    -moz-animation-duration: 3.5s;
+    -webkit-animation-duration: 3.5s;
+    -ms-animation-duration: 3.5s;
+    -o-animation-duration: 3.5s;
+    overflow: auto;
+    padding: 3.5vh;
+    width: 100%;
+    position: absolute;
+}
+
+
+@keyframes loginCabe {
+    0%   {
+        height:100%;
+        background:#0b2d46;
+         padding:15% 0;
+    }
+    50% {
+        background:#0b2d46;
+        
+    }
+
+
+    85%   {
+        height:100%;
+          padding:15% 0;
+    }
+
+    100% {
+
+    }
+}
+.conteniidoPartLogin{
+    width: 29%;
+    min-width: 501px;
+    display: inline-flex;
+    vertical-align: middle;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.botonInciarSecion{
+    min-height: inherit;
+    height: auto;
+}
+
+.footerBotonIngresar{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 15px;
+}
+.contenedorLogin{
+    text-align: center;
+}
+
+.CuerpoTotalProyecto{
+    background-image: url(../img/fondo-login.png) !important;
+}
+
+
+.LogoSitem{
+    min-width: 250px;
+    width: 36vh;
+}
+
+
+.banner {   
+    display: flex;
+    background-color: #023357;
+    height: 255px;
+    box-shadow: 0 0 10px  #21323d; 
+    align-content:center;
+    justify-content:center;
+}
+
+.banner .adan{
+    width: 100%;
+    height: auto;
+    font-size: 150px;
+    margin: auto 0 10px;
+    color: white;
+    text-align: center;    
+}
+
+.iconoLoginInput{
+    color: #015780;
+}
+
+.banner .logo{
+    background-image: url("../../static/img/logo.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 350px;
+    width: 350px;
+    height: 250px;
+    margin-right: 20px;
+    float: right;
+}
+.banner .logo span{
+    color: #fff;
+    float: right;   
+    padding-top: 200px;
+    font-size: 22px;
+}
+.banner .logo2{
+    background-image: url("../../static/img/banner.png");
+    background-repeat: no-repeat;
+    background-position: right bottom, left top;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 10px #21323d;
+}
+
+
+
+
+.content .block1 md-content{
+    width: 388px;
+    background: transparent;
+    display: inline-block;
+    /* float: right;
+     margin: 45px 30px;
+    */
+}
+.content .block1 md-input-container{
+    margin: 40px 0;
+    font-size: 22px;
+    padding-left: 40px; 
+}
+.content .block1, .content .block2{
+    /*background-color: #fff;*/
+}
+.content .block1 md-icon{
+    top: 0px;
+    left: 0px;
+    right: auto;
+    height: 33px;
+    width: 35px;
+}
+
+.content .block1 md-icon i{
+    font-size: 35px;
+}
+.content .block2 .botones{
+    margin-top: 25px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 20px;
+    width: 300px;
+    /*margin: 0 auto;*/
+    border: solid 1px;
+}
+.content .block3{
+    margin: 0 auto;
+}
+
+.login-button {
+    box-shadow: 0 0 2px #000000;
+    color: #015780;
+    font-size: 1.1em;
+    font-weight: bold;
+    height: 100%;
+    min-width: 20px;
+    width: 100%;
+    margin: 0px;
+    background: #f0f0f0;
+}
+
+.keyboard{
+    box-sizing: content-box;
+    padding: 17px;
+    /*box-shadow: 0 0 4px #aaaaaa;*/
+    width: 480px;
+    margin: 6px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: inline-block;      
+}
+
+.keyboard .numbers{
+    width: 230px;
+    text-align: center;
+}
+
+.keyboard .letters{
+    width: 149px;
+    text-align: center;
+    margin-left: 70px;
+}
+
+.keyboard .letters, .keyboard .numbers{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.keyboard .key{
+    width: 64.5px;
+    height: 57.99999999999997px;    
+    color: #015780;
+    background-color: #f0f0f0;
+    border-color: #04497a;
+     box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.28);
+    display: inline-block;
+    font-size: 18.0px;
+    padding: 0px;
+    border-radius: 2px;
+    margin: 5px 7px 5px 0;
+    vertical-align: top;
+    overflow: hidden;
+    font-weight: bold;
+    cursor:pointer;
+}
+.keyboard .key:hover{
+    color: #ffffff;
+    background-color: #015780;  
+}
+
+.keyboard .numbers .key:nth-child(3n), .keyboard .letters .key:nth-child(2n){
+    margin-right: 0;
+}
+.keyboard .key:last-child{
+    margin: 5px 0;
+}
+.keyboard .back{
+    width: 143.25px;
+    position: relative;
+    color: #c7921a;
+}
+.keyboard .key span{
+    display: inline-block;
+    padding: 18px;
+}
+.keyboard .back .material-icons{
+    font-weight: bold;
+}
+.keyboard .back:after{
+    content: "";
+    display: block;
+    width: 143.25px;
+    height: 7px;
+    background: #c7921a;
+    position: absolute;
+    bottom: 0;
+}
+.button-login{
+    color: #fff;
+    background-color: #2baf2b;
+    border-color: #0a8f08;
+    font-size: 1.4em;
+    padding: 10px 120px;
+    text-transform: none;
+    margin: 0 auto;
+}
+
+@media (max-width: 1200px){
+    .keyboard .letters {
+        margin-left: 10px;
+
+    }
+    .conteniidoPartLogin{
+        width: 40%;
+        min-width:auto;
+        height: auto;
+        margin: 7vh 0;
+    }
+    
+    
+     .keyboard{
+        -ms-transform: scale(0.75); /* IE 9 */
+        -webkit-transform: scale(0.75); /* Safari */
+        transform: scale(0.75);
+        margin: -35px -60px 0 -60px;
+    }
+}
+
+@media screen and  (max-width: 990px)  , screen and  (max-height:569px){
+
+
+    .PersonajeAnimado{
+
+    }
+   .content .block1 md-content , .conteniidoPartLogin{
+    width: 75%;
+    min-width: auto;
+    text-align: center;
+    justify-content: center;
+    -webkit-mask-composite: source-atop;
+    min-width: 320px;
+    }
+
+
+    .AnimaciondeCabecera{
+        text-align: center;
+        display: block !important;
+        position: fixed !important;
+    }
+}
+
+@media screen and  (max-width: 650px) {
+    .keyboard{
+        -ms-transform: scale(0.75); /* IE 9 */
+        -webkit-transform: scale(0.75); /* Safari */
+        transform: scale(0.75);
+
+        margin: -35px -60px 0 -60px;
+    }
+
+ 
+
+    .hint-input{
+        bottom: -30px;
+    }
+
+    .content .block1 md-input-container{
+        width: 80%;
+        margin: 40px auto;
+        min-width: 300px;
+    }
+
+}
